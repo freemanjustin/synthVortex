@@ -1,0 +1,3115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cxml xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:noNamespaceSchemaLocation="http://www.bom.gov.au/cyclone/cxmlinfo/cxml.1.3.xsd">
+  <header>
+    <product />
+    <generatingApplication>
+      <applicationType>Tropical Cyclone Module</applicationType>
+    </generatingApplication>
+    <productionCenter>Australian Bureau of Meteorology</productionCenter>
+    <creationTime>2016-06-08T00:12:09Z</creationTime>
+  </header>
+  <data type="analysis">
+    <disturbance ID="2011013112_135S_1605E">
+      <cycloneName>Yasi</cycloneName>
+      <localID>14U</localID>
+      <fix>
+        <validTime>2011-01-31T12:00:00Z</validTime>
+        <latitude units="deg">-13.5</latitude>
+        <longitude units="deg">160.5</longitude>
+        <accuracy units="nm">20.0</accuracy>
+        <cycloneData>
+          <category>3</category>
+          <minimumPressure>
+            <pressure units="hPa">971.0</pressure>
+          </minimumPressure>
+          <lastClosedIsobar>
+            <pressure units="hPa">1004.0</pressure>
+            <radius units="nm">220.0</radius>
+          </lastClosedIsobar>
+          <maximumWind>
+            <speed units="kt">70.0</speed>
+            <averagingPeriod units="s">600.0</averagingPeriod>
+            <radius units="nm">22.0</radius>
+            <gusts units="kt">100.0</gusts>
+            <gustAvgPeriod units="s">3.0</gustAvgPeriod>
+          </maximumWind>
+          <windContours>
+            <windSpeed units="kt">
+              34.0
+              <radius units="nm" sector="NEQ">120.0</radius>
+              <radius units="nm" sector="SEQ">140.0</radius>
+              <radius units="nm" sector="SWQ">150.0</radius>
+              <radius units="nm" sector="NWQ">90.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              48.0
+              <radius units="nm" sector="NEQ">50.0</radius>
+              <radius units="nm" sector="SEQ">60.0</radius>
+              <radius units="nm" sector="SWQ">60.0</radius>
+              <radius units="nm" sector="NWQ">50.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              64.0
+              <radius units="nm" sector="NEQ">30.0</radius>
+              <radius units="nm" sector="SEQ">30.0</radius>
+              <radius units="nm" sector="SWQ">30.0</radius>
+              <radius units="nm" sector="NWQ">30.0</radius>
+            </windSpeed>
+          </windContours>
+          <vortexParameters>
+            <x>0.5112</x>
+          </vortexParameters>
+        </cycloneData>
+      </fix>
+      <fix>
+        <validTime>2011-01-31T13:00:00Z</validTime>
+        <latitude units="deg">-13.5333</latitude>
+        <longitude units="deg">160.1833</longitude>
+        <accuracy units="nm">19.0</accuracy>
+        <cycloneData>
+          <category>3</category>
+          <minimumPressure>
+            <pressure units="hPa">971.0</pressure>
+          </minimumPressure>
+          <maximumWind>
+            <speed units="kt">70.8333</speed>
+            <averagingPeriod units="s">600.0</averagingPeriod>
+            <radius units="nm">22.0</radius>
+            <gusts units="kt">100.0</gusts>
+            <gustAvgPeriod units="s">3.0</gustAvgPeriod>
+          </maximumWind>
+          <windContours>
+            <windSpeed units="kt">
+              34.0
+              <radius units="nm" sector="NEQ">120.0</radius>
+              <radius units="nm" sector="SEQ">140.0</radius>
+              <radius units="nm" sector="SWQ">150.0</radius>
+              <radius units="nm" sector="NWQ">90.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              48.0
+              <radius units="nm" sector="NEQ">50.0</radius>
+              <radius units="nm" sector="SEQ">60.0</radius>
+              <radius units="nm" sector="SWQ">60.0</radius>
+              <radius units="nm" sector="NWQ">50.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              64.0
+              <radius units="nm" sector="NEQ">30.0</radius>
+              <radius units="nm" sector="SEQ">30.0</radius>
+              <radius units="nm" sector="SWQ">30.0</radius>
+              <radius units="nm" sector="NWQ">30.0</radius>
+            </windSpeed>
+          </windContours>
+          <vortexParameters>
+            <x>0.5157</x>
+          </vortexParameters>
+        </cycloneData>
+      </fix>
+      <fix>
+        <validTime>2011-01-31T14:00:00Z</validTime>
+        <latitude units="deg">-13.5667</latitude>
+        <longitude units="deg">159.8667</longitude>
+        <accuracy units="nm">18.0</accuracy>
+        <cycloneData>
+          <category>3</category>
+          <minimumPressure>
+            <pressure units="hPa">970.0</pressure>
+          </minimumPressure>
+          <maximumWind>
+            <speed units="kt">71.6667</speed>
+            <averagingPeriod units="s">600.0</averagingPeriod>
+            <radius units="nm">22.0</radius>
+            <gusts units="kt">100.0</gusts>
+            <gustAvgPeriod units="s">3.0</gustAvgPeriod>
+          </maximumWind>
+          <windContours>
+            <windSpeed units="kt">
+              34.0
+              <radius units="nm" sector="NEQ">120.0</radius>
+              <radius units="nm" sector="SEQ">140.0</radius>
+              <radius units="nm" sector="SWQ">150.0</radius>
+              <radius units="nm" sector="NWQ">90.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              48.0
+              <radius units="nm" sector="NEQ">50.0</radius>
+              <radius units="nm" sector="SEQ">60.0</radius>
+              <radius units="nm" sector="SWQ">60.0</radius>
+              <radius units="nm" sector="NWQ">50.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              64.0
+              <radius units="nm" sector="NEQ">30.0</radius>
+              <radius units="nm" sector="SEQ">30.0</radius>
+              <radius units="nm" sector="SWQ">30.0</radius>
+              <radius units="nm" sector="NWQ">30.0</radius>
+            </windSpeed>
+          </windContours>
+          <vortexParameters>
+            <x>0.5203</x>
+          </vortexParameters>
+        </cycloneData>
+      </fix>
+      <fix>
+        <validTime>2011-01-31T15:00:00Z</validTime>
+        <latitude units="deg">-13.6</latitude>
+        <longitude units="deg">159.55</longitude>
+        <accuracy units="nm">18.0</accuracy>
+        <cycloneData>
+          <category>3</category>
+          <minimumPressure>
+            <pressure units="hPa">970.0</pressure>
+          </minimumPressure>
+          <maximumWind>
+            <speed units="kt">72.5</speed>
+            <averagingPeriod units="s">600.0</averagingPeriod>
+            <radius units="nm">22.0</radius>
+            <gusts units="kt">100.0</gusts>
+            <gustAvgPeriod units="s">3.0</gustAvgPeriod>
+          </maximumWind>
+          <windContours>
+            <windSpeed units="kt">
+              34.0
+              <radius units="nm" sector="NEQ">120.0</radius>
+              <radius units="nm" sector="SEQ">140.0</radius>
+              <radius units="nm" sector="SWQ">150.0</radius>
+              <radius units="nm" sector="NWQ">90.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              48.0
+              <radius units="nm" sector="NEQ">50.0</radius>
+              <radius units="nm" sector="SEQ">60.0</radius>
+              <radius units="nm" sector="SWQ">60.0</radius>
+              <radius units="nm" sector="NWQ">50.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              64.0
+              <radius units="nm" sector="NEQ">30.0</radius>
+              <radius units="nm" sector="SEQ">30.0</radius>
+              <radius units="nm" sector="SWQ">30.0</radius>
+              <radius units="nm" sector="NWQ">30.0</radius>
+            </windSpeed>
+          </windContours>
+          <vortexParameters>
+            <x>0.5248</x>
+          </vortexParameters>
+        </cycloneData>
+      </fix>
+      <fix>
+        <validTime>2011-01-31T16:00:00Z</validTime>
+        <latitude units="deg">-13.6333</latitude>
+        <longitude units="deg">159.2333</longitude>
+        <accuracy units="nm">17.0</accuracy>
+        <cycloneData>
+          <category>3</category>
+          <minimumPressure>
+            <pressure units="hPa">969.0</pressure>
+          </minimumPressure>
+          <maximumWind>
+            <speed units="kt">73.3333</speed>
+            <averagingPeriod units="s">600.0</averagingPeriod>
+            <radius units="nm">22.0</radius>
+            <gusts units="kt">100.0</gusts>
+            <gustAvgPeriod units="s">3.0</gustAvgPeriod>
+          </maximumWind>
+          <windContours>
+            <windSpeed units="kt">
+              34.0
+              <radius units="nm" sector="NEQ">120.0</radius>
+              <radius units="nm" sector="SEQ">140.0</radius>
+              <radius units="nm" sector="SWQ">150.0</radius>
+              <radius units="nm" sector="NWQ">90.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              48.0
+              <radius units="nm" sector="NEQ">50.0</radius>
+              <radius units="nm" sector="SEQ">60.0</radius>
+              <radius units="nm" sector="SWQ">60.0</radius>
+              <radius units="nm" sector="NWQ">50.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              64.0
+              <radius units="nm" sector="NEQ">30.0</radius>
+              <radius units="nm" sector="SEQ">30.0</radius>
+              <radius units="nm" sector="SWQ">30.0</radius>
+              <radius units="nm" sector="NWQ">30.0</radius>
+            </windSpeed>
+          </windContours>
+          <vortexParameters>
+            <x>0.5294</x>
+          </vortexParameters>
+        </cycloneData>
+      </fix>
+      <fix>
+        <validTime>2011-01-31T17:00:00Z</validTime>
+        <latitude units="deg">-13.6667</latitude>
+        <longitude units="deg">158.9167</longitude>
+        <accuracy units="nm">16.0</accuracy>
+        <cycloneData>
+          <category>3</category>
+          <minimumPressure>
+            <pressure units="hPa">969.0</pressure>
+          </minimumPressure>
+          <maximumWind>
+            <speed units="kt">74.1667</speed>
+            <averagingPeriod units="s">600.0</averagingPeriod>
+            <radius units="nm">22.0</radius>
+            <gusts units="kt">105.0</gusts>
+            <gustAvgPeriod units="s">3.0</gustAvgPeriod>
+          </maximumWind>
+          <windContours>
+            <windSpeed units="kt">
+              34.0
+              <radius units="nm" sector="NEQ">120.0</radius>
+              <radius units="nm" sector="SEQ">140.0</radius>
+              <radius units="nm" sector="SWQ">150.0</radius>
+              <radius units="nm" sector="NWQ">90.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              48.0
+              <radius units="nm" sector="NEQ">50.0</radius>
+              <radius units="nm" sector="SEQ">60.0</radius>
+              <radius units="nm" sector="SWQ">60.0</radius>
+              <radius units="nm" sector="NWQ">50.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              64.0
+              <radius units="nm" sector="NEQ">30.0</radius>
+              <radius units="nm" sector="SEQ">30.0</radius>
+              <radius units="nm" sector="SWQ">30.0</radius>
+              <radius units="nm" sector="NWQ">30.0</radius>
+            </windSpeed>
+          </windContours>
+          <vortexParameters>
+            <x>0.534</x>
+          </vortexParameters>
+        </cycloneData>
+      </fix>
+      <fix>
+        <validTime>2011-01-31T18:00:00Z</validTime>
+        <latitude units="deg">-13.7</latitude>
+        <longitude units="deg">158.6</longitude>
+        <accuracy units="nm">15.0</accuracy>
+        <cycloneData>
+          <category>3</category>
+          <minimumPressure>
+            <pressure units="hPa">968.0</pressure>
+          </minimumPressure>
+          <lastClosedIsobar>
+            <pressure units="hPa">1004.0</pressure>
+            <radius units="nm">240.0</radius>
+          </lastClosedIsobar>
+          <maximumWind>
+            <speed units="kt">75.0</speed>
+            <averagingPeriod units="s">600.0</averagingPeriod>
+            <radius units="nm">22.0</radius>
+            <gusts units="kt">105.0</gusts>
+            <gustAvgPeriod units="s">3.0</gustAvgPeriod>
+          </maximumWind>
+          <windContours>
+            <windSpeed units="kt">
+              34.0
+              <radius units="nm" sector="NEQ">140.0</radius>
+              <radius units="nm" sector="SEQ">150.0</radius>
+              <radius units="nm" sector="SWQ">150.0</radius>
+              <radius units="nm" sector="NWQ">100.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              48.0
+              <radius units="nm" sector="NEQ">50.0</radius>
+              <radius units="nm" sector="SEQ">80.0</radius>
+              <radius units="nm" sector="SWQ">80.0</radius>
+              <radius units="nm" sector="NWQ">60.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              64.0
+              <radius units="nm" sector="NEQ">30.0</radius>
+              <radius units="nm" sector="SEQ">40.0</radius>
+              <radius units="nm" sector="SWQ">40.0</radius>
+              <radius units="nm" sector="NWQ">30.0</radius>
+            </windSpeed>
+          </windContours>
+          <vortexParameters>
+            <x>0.5385</x>
+          </vortexParameters>
+        </cycloneData>
+      </fix>
+      <fix>
+        <validTime>2011-01-31T19:00:00Z</validTime>
+        <latitude units="deg">-13.7667</latitude>
+        <longitude units="deg">158.2833</longitude>
+        <accuracy units="nm">16.0</accuracy>
+        <cycloneData>
+          <category>3</category>
+          <minimumPressure>
+            <pressure units="hPa">968.0</pressure>
+          </minimumPressure>
+          <maximumWind>
+            <speed units="kt">75.8333</speed>
+            <averagingPeriod units="s">600.0</averagingPeriod>
+            <radius units="nm">21.666666666666668</radius>
+            <gusts units="kt">105.0</gusts>
+            <gustAvgPeriod units="s">3.0</gustAvgPeriod>
+          </maximumWind>
+          <windContours>
+            <windSpeed units="kt">
+              34.0
+              <radius units="nm" sector="NEQ">140.0</radius>
+              <radius units="nm" sector="SEQ">150.0</radius>
+              <radius units="nm" sector="SWQ">150.0</radius>
+              <radius units="nm" sector="NWQ">100.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              48.0
+              <radius units="nm" sector="NEQ">50.0</radius>
+              <radius units="nm" sector="SEQ">80.0</radius>
+              <radius units="nm" sector="SWQ">80.0</radius>
+              <radius units="nm" sector="NWQ">60.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              64.0
+              <radius units="nm" sector="NEQ">30.0</radius>
+              <radius units="nm" sector="SEQ">40.0</radius>
+              <radius units="nm" sector="SWQ">40.0</radius>
+              <radius units="nm" sector="NWQ">30.0</radius>
+            </windSpeed>
+          </windContours>
+          <vortexParameters>
+            <x>0.543</x>
+          </vortexParameters>
+        </cycloneData>
+      </fix>
+      <fix>
+        <validTime>2011-01-31T20:00:00Z</validTime>
+        <latitude units="deg">-13.8333</latitude>
+        <longitude units="deg">157.9667</longitude>
+        <accuracy units="nm">17.0</accuracy>
+        <cycloneData>
+          <category>3</category>
+          <minimumPressure>
+            <pressure units="hPa">967.0</pressure>
+          </minimumPressure>
+          <maximumWind>
+            <speed units="kt">76.6667</speed>
+            <averagingPeriod units="s">600.0</averagingPeriod>
+            <radius units="nm">21.333333333333332</radius>
+            <gusts units="kt">110.0</gusts>
+            <gustAvgPeriod units="s">3.0</gustAvgPeriod>
+          </maximumWind>
+          <windContours>
+            <windSpeed units="kt">
+              34.0
+              <radius units="nm" sector="NEQ">140.0</radius>
+              <radius units="nm" sector="SEQ">150.0</radius>
+              <radius units="nm" sector="SWQ">150.0</radius>
+              <radius units="nm" sector="NWQ">100.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              48.0
+              <radius units="nm" sector="NEQ">50.0</radius>
+              <radius units="nm" sector="SEQ">80.0</radius>
+              <radius units="nm" sector="SWQ">80.0</radius>
+              <radius units="nm" sector="NWQ">60.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              64.0
+              <radius units="nm" sector="NEQ">30.0</radius>
+              <radius units="nm" sector="SEQ">40.0</radius>
+              <radius units="nm" sector="SWQ">40.0</radius>
+              <radius units="nm" sector="NWQ">30.0</radius>
+            </windSpeed>
+          </windContours>
+          <vortexParameters>
+            <x>0.5475</x>
+          </vortexParameters>
+        </cycloneData>
+      </fix>
+      <fix>
+        <validTime>2011-01-31T21:00:00Z</validTime>
+        <latitude units="deg">-13.9</latitude>
+        <longitude units="deg">157.65</longitude>
+        <accuracy units="nm">18.0</accuracy>
+        <cycloneData>
+          <category>3</category>
+          <minimumPressure>
+            <pressure units="hPa">967.0</pressure>
+          </minimumPressure>
+          <maximumWind>
+            <speed units="kt">77.5</speed>
+            <averagingPeriod units="s">600.0</averagingPeriod>
+            <radius units="nm">21.0</radius>
+            <gusts units="kt">110.0</gusts>
+            <gustAvgPeriod units="s">3.0</gustAvgPeriod>
+          </maximumWind>
+          <windContours>
+            <windSpeed units="kt">
+              34.0
+              <radius units="nm" sector="NEQ">140.0</radius>
+              <radius units="nm" sector="SEQ">150.0</radius>
+              <radius units="nm" sector="SWQ">150.0</radius>
+              <radius units="nm" sector="NWQ">100.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              48.0
+              <radius units="nm" sector="NEQ">50.0</radius>
+              <radius units="nm" sector="SEQ">80.0</radius>
+              <radius units="nm" sector="SWQ">80.0</radius>
+              <radius units="nm" sector="NWQ">60.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              64.0
+              <radius units="nm" sector="NEQ">30.0</radius>
+              <radius units="nm" sector="SEQ">40.0</radius>
+              <radius units="nm" sector="SWQ">40.0</radius>
+              <radius units="nm" sector="NWQ">30.0</radius>
+            </windSpeed>
+          </windContours>
+          <vortexParameters>
+            <x>0.552</x>
+          </vortexParameters>
+        </cycloneData>
+      </fix>
+      <fix>
+        <validTime>2011-01-31T22:00:00Z</validTime>
+        <latitude units="deg">-13.9667</latitude>
+        <longitude units="deg">157.3333</longitude>
+        <accuracy units="nm">18.0</accuracy>
+        <cycloneData>
+          <category>3</category>
+          <minimumPressure>
+            <pressure units="hPa">967.0</pressure>
+          </minimumPressure>
+          <maximumWind>
+            <speed units="kt">78.3333</speed>
+            <averagingPeriod units="s">600.0</averagingPeriod>
+            <radius units="nm">20.666666666666668</radius>
+            <gusts units="kt">110.0</gusts>
+            <gustAvgPeriod units="s">3.0</gustAvgPeriod>
+          </maximumWind>
+          <windContours>
+            <windSpeed units="kt">
+              34.0
+              <radius units="nm" sector="NEQ">140.0</radius>
+              <radius units="nm" sector="SEQ">150.0</radius>
+              <radius units="nm" sector="SWQ">150.0</radius>
+              <radius units="nm" sector="NWQ">100.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              48.0
+              <radius units="nm" sector="NEQ">50.0</radius>
+              <radius units="nm" sector="SEQ">80.0</radius>
+              <radius units="nm" sector="SWQ">80.0</radius>
+              <radius units="nm" sector="NWQ">60.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              64.0
+              <radius units="nm" sector="NEQ">30.0</radius>
+              <radius units="nm" sector="SEQ">40.0</radius>
+              <radius units="nm" sector="SWQ">40.0</radius>
+              <radius units="nm" sector="NWQ">30.0</radius>
+            </windSpeed>
+          </windContours>
+          <vortexParameters>
+            <x>0.5566</x>
+          </vortexParameters>
+        </cycloneData>
+      </fix>
+      <fix>
+        <validTime>2011-01-31T23:00:00Z</validTime>
+        <latitude units="deg">-14.0333</latitude>
+        <longitude units="deg">157.0167</longitude>
+        <accuracy units="nm">19.0</accuracy>
+        <cycloneData>
+          <category>3</category>
+          <minimumPressure>
+            <pressure units="hPa">966.0</pressure>
+          </minimumPressure>
+          <maximumWind>
+            <speed units="kt">79.1667</speed>
+            <averagingPeriod units="s">600.0</averagingPeriod>
+            <radius units="nm">20.333333333333332</radius>
+            <gusts units="kt">110.0</gusts>
+            <gustAvgPeriod units="s">3.0</gustAvgPeriod>
+          </maximumWind>
+          <windContours>
+            <windSpeed units="kt">
+              34.0
+              <radius units="nm" sector="NEQ">140.0</radius>
+              <radius units="nm" sector="SEQ">150.0</radius>
+              <radius units="nm" sector="SWQ">150.0</radius>
+              <radius units="nm" sector="NWQ">100.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              48.0
+              <radius units="nm" sector="NEQ">50.0</radius>
+              <radius units="nm" sector="SEQ">80.0</radius>
+              <radius units="nm" sector="SWQ">80.0</radius>
+              <radius units="nm" sector="NWQ">60.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              64.0
+              <radius units="nm" sector="NEQ">30.0</radius>
+              <radius units="nm" sector="SEQ">40.0</radius>
+              <radius units="nm" sector="SWQ">40.0</radius>
+              <radius units="nm" sector="NWQ">30.0</radius>
+            </windSpeed>
+          </windContours>
+          <vortexParameters>
+            <x>0.5611</x>
+          </vortexParameters>
+        </cycloneData>
+      </fix>
+      <fix>
+        <validTime>2011-02-01T00:00:00Z</validTime>
+        <latitude units="deg">-14.1</latitude>
+        <longitude units="deg">156.7</longitude>
+        <accuracy units="nm">20.0</accuracy>
+        <cycloneData>
+          <category>3</category>
+          <minimumPressure>
+            <pressure units="hPa">966.0</pressure>
+          </minimumPressure>
+          <lastClosedIsobar>
+            <pressure units="hPa">1004.0</pressure>
+            <radius units="nm">260.0</radius>
+          </lastClosedIsobar>
+          <maximumWind>
+            <speed units="kt">80.0</speed>
+            <averagingPeriod units="s">600.0</averagingPeriod>
+            <radius units="nm">20.0</radius>
+            <gusts units="kt">110.0</gusts>
+            <gustAvgPeriod units="s">3.0</gustAvgPeriod>
+          </maximumWind>
+          <windContours>
+            <windSpeed units="kt">
+              34.0
+              <radius units="nm" sector="NEQ">140.0</radius>
+              <radius units="nm" sector="SEQ">150.0</radius>
+              <radius units="nm" sector="SWQ">150.0</radius>
+              <radius units="nm" sector="NWQ">120.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              48.0
+              <radius units="nm" sector="NEQ">70.0</radius>
+              <radius units="nm" sector="SEQ">100.0</radius>
+              <radius units="nm" sector="SWQ">100.0</radius>
+              <radius units="nm" sector="NWQ">50.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              64.0
+              <radius units="nm" sector="NEQ">30.0</radius>
+              <radius units="nm" sector="SEQ">40.0</radius>
+              <radius units="nm" sector="SWQ">40.0</radius>
+              <radius units="nm" sector="NWQ">30.0</radius>
+            </windSpeed>
+          </windContours>
+          <vortexParameters>
+            <x>0.5656</x>
+          </vortexParameters>
+        </cycloneData>
+      </fix>
+      <fix>
+        <validTime>2011-02-01T01:00:00Z</validTime>
+        <latitude units="deg">-14.15</latitude>
+        <longitude units="deg">156.4167</longitude>
+        <accuracy units="nm">20.0</accuracy>
+        <cycloneData>
+          <category>3</category>
+          <minimumPressure>
+            <pressure units="hPa">964.0</pressure>
+          </minimumPressure>
+          <maximumWind>
+            <speed units="kt">81.6667</speed>
+            <averagingPeriod units="s">600.0</averagingPeriod>
+            <radius units="nm">20.0</radius>
+            <gusts units="kt">115.0</gusts>
+            <gustAvgPeriod units="s">3.0</gustAvgPeriod>
+          </maximumWind>
+          <windContours>
+            <windSpeed units="kt">
+              34.0
+              <radius units="nm" sector="NEQ">140.0</radius>
+              <radius units="nm" sector="SEQ">150.0</radius>
+              <radius units="nm" sector="SWQ">150.0</radius>
+              <radius units="nm" sector="NWQ">120.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              48.0
+              <radius units="nm" sector="NEQ">70.0</radius>
+              <radius units="nm" sector="SEQ">100.0</radius>
+              <radius units="nm" sector="SWQ">100.0</radius>
+              <radius units="nm" sector="NWQ">50.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              64.0
+              <radius units="nm" sector="NEQ">30.0</radius>
+              <radius units="nm" sector="SEQ">40.0</radius>
+              <radius units="nm" sector="SWQ">40.0</radius>
+              <radius units="nm" sector="NWQ">30.0</radius>
+            </windSpeed>
+          </windContours>
+          <vortexParameters>
+            <x>0.5747</x>
+          </vortexParameters>
+        </cycloneData>
+      </fix>
+      <fix>
+        <validTime>2011-02-01T02:00:00Z</validTime>
+        <latitude units="deg">-14.2</latitude>
+        <longitude units="deg">156.1333</longitude>
+        <accuracy units="nm">20.0</accuracy>
+        <cycloneData>
+          <category>3</category>
+          <minimumPressure>
+            <pressure units="hPa">963.0</pressure>
+          </minimumPressure>
+          <maximumWind>
+            <speed units="kt">83.3333</speed>
+            <averagingPeriod units="s">600.0</averagingPeriod>
+            <radius units="nm">20.0</radius>
+            <gusts units="kt">115.0</gusts>
+            <gustAvgPeriod units="s">3.0</gustAvgPeriod>
+          </maximumWind>
+          <windContours>
+            <windSpeed units="kt">
+              34.0
+              <radius units="nm" sector="NEQ">140.0</radius>
+              <radius units="nm" sector="SEQ">150.0</radius>
+              <radius units="nm" sector="SWQ">150.0</radius>
+              <radius units="nm" sector="NWQ">120.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              48.0
+              <radius units="nm" sector="NEQ">70.0</radius>
+              <radius units="nm" sector="SEQ">100.0</radius>
+              <radius units="nm" sector="SWQ">100.0</radius>
+              <radius units="nm" sector="NWQ">50.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              64.0
+              <radius units="nm" sector="NEQ">30.0</radius>
+              <radius units="nm" sector="SEQ">40.0</radius>
+              <radius units="nm" sector="SWQ">40.0</radius>
+              <radius units="nm" sector="NWQ">30.0</radius>
+            </windSpeed>
+          </windContours>
+          <vortexParameters>
+            <x>0.5838</x>
+          </vortexParameters>
+        </cycloneData>
+      </fix>
+      <fix>
+        <validTime>2011-02-01T03:00:00Z</validTime>
+        <latitude units="deg">-14.25</latitude>
+        <longitude units="deg">155.85</longitude>
+        <accuracy units="nm">20.0</accuracy>
+        <cycloneData>
+          <category>3</category>
+          <minimumPressure>
+            <pressure units="hPa">961.0</pressure>
+          </minimumPressure>
+          <maximumWind>
+            <speed units="kt">85.0</speed>
+            <averagingPeriod units="s">600.0</averagingPeriod>
+            <radius units="nm">20.0</radius>
+            <gusts units="kt">120.0</gusts>
+            <gustAvgPeriod units="s">3.0</gustAvgPeriod>
+          </maximumWind>
+          <windContours>
+            <windSpeed units="kt">
+              34.0
+              <radius units="nm" sector="NEQ">140.0</radius>
+              <radius units="nm" sector="SEQ">150.0</radius>
+              <radius units="nm" sector="SWQ">150.0</radius>
+              <radius units="nm" sector="NWQ">120.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              48.0
+              <radius units="nm" sector="NEQ">70.0</radius>
+              <radius units="nm" sector="SEQ">100.0</radius>
+              <radius units="nm" sector="SWQ">100.0</radius>
+              <radius units="nm" sector="NWQ">50.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              64.0
+              <radius units="nm" sector="NEQ">30.0</radius>
+              <radius units="nm" sector="SEQ">40.0</radius>
+              <radius units="nm" sector="SWQ">40.0</radius>
+              <radius units="nm" sector="NWQ">30.0</radius>
+            </windSpeed>
+          </windContours>
+          <vortexParameters>
+            <x>0.593</x>
+          </vortexParameters>
+        </cycloneData>
+      </fix>
+      <fix>
+        <validTime>2011-02-01T04:00:00Z</validTime>
+        <latitude units="deg">-14.3</latitude>
+        <longitude units="deg">155.5667</longitude>
+        <accuracy units="nm">20.0</accuracy>
+        <cycloneData>
+          <category>4</category>
+          <minimumPressure>
+            <pressure units="hPa">959.0</pressure>
+          </minimumPressure>
+          <maximumWind>
+            <speed units="kt">86.6667</speed>
+            <averagingPeriod units="s">600.0</averagingPeriod>
+            <radius units="nm">20.0</radius>
+            <gusts units="kt">125.0</gusts>
+            <gustAvgPeriod units="s">3.0</gustAvgPeriod>
+          </maximumWind>
+          <windContours>
+            <windSpeed units="kt">
+              34.0
+              <radius units="nm" sector="NEQ">140.0</radius>
+              <radius units="nm" sector="SEQ">150.0</radius>
+              <radius units="nm" sector="SWQ">150.0</radius>
+              <radius units="nm" sector="NWQ">120.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              48.0
+              <radius units="nm" sector="NEQ">70.0</radius>
+              <radius units="nm" sector="SEQ">100.0</radius>
+              <radius units="nm" sector="SWQ">100.0</radius>
+              <radius units="nm" sector="NWQ">50.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              64.0
+              <radius units="nm" sector="NEQ">30.0</radius>
+              <radius units="nm" sector="SEQ">40.0</radius>
+              <radius units="nm" sector="SWQ">40.0</radius>
+              <radius units="nm" sector="NWQ">30.0</radius>
+            </windSpeed>
+          </windContours>
+          <vortexParameters>
+            <x>0.6021</x>
+          </vortexParameters>
+        </cycloneData>
+      </fix>
+      <fix>
+        <validTime>2011-02-01T05:00:00Z</validTime>
+        <latitude units="deg">-14.35</latitude>
+        <longitude units="deg">155.2833</longitude>
+        <accuracy units="nm">20.0</accuracy>
+        <cycloneData>
+          <category>4</category>
+          <minimumPressure>
+            <pressure units="hPa">958.0</pressure>
+          </minimumPressure>
+          <maximumWind>
+            <speed units="kt">88.3333</speed>
+            <averagingPeriod units="s">600.0</averagingPeriod>
+            <radius units="nm">20.0</radius>
+            <gusts units="kt">125.0</gusts>
+            <gustAvgPeriod units="s">3.0</gustAvgPeriod>
+          </maximumWind>
+          <windContours>
+            <windSpeed units="kt">
+              34.0
+              <radius units="nm" sector="NEQ">140.0</radius>
+              <radius units="nm" sector="SEQ">150.0</radius>
+              <radius units="nm" sector="SWQ">150.0</radius>
+              <radius units="nm" sector="NWQ">120.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              48.0
+              <radius units="nm" sector="NEQ">70.0</radius>
+              <radius units="nm" sector="SEQ">100.0</radius>
+              <radius units="nm" sector="SWQ">100.0</radius>
+              <radius units="nm" sector="NWQ">50.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              64.0
+              <radius units="nm" sector="NEQ">30.0</radius>
+              <radius units="nm" sector="SEQ">40.0</radius>
+              <radius units="nm" sector="SWQ">40.0</radius>
+              <radius units="nm" sector="NWQ">30.0</radius>
+            </windSpeed>
+          </windContours>
+          <vortexParameters>
+            <x>0.6112</x>
+          </vortexParameters>
+        </cycloneData>
+      </fix>
+      <fix>
+        <validTime>2011-02-01T06:00:00Z</validTime>
+        <latitude units="deg">-14.4</latitude>
+        <longitude units="deg">155.0</longitude>
+        <accuracy units="nm">20.0</accuracy>
+        <cycloneData>
+          <category>4</category>
+          <minimumPressure>
+            <pressure units="hPa">956.0</pressure>
+          </minimumPressure>
+          <lastClosedIsobar>
+            <pressure units="hPa">1004.0</pressure>
+            <radius units="nm">240.0</radius>
+          </lastClosedIsobar>
+          <maximumWind>
+            <speed units="kt">90.0</speed>
+            <averagingPeriod units="s">600.0</averagingPeriod>
+            <radius units="nm">20.0</radius>
+            <gusts units="kt">125.0</gusts>
+            <gustAvgPeriod units="s">3.0</gustAvgPeriod>
+          </maximumWind>
+          <windContours>
+            <windSpeed units="kt">
+              34.0
+              <radius units="nm" sector="NEQ">160.0</radius>
+              <radius units="nm" sector="SEQ">175.0</radius>
+              <radius units="nm" sector="SWQ">175.0</radius>
+              <radius units="nm" sector="NWQ">120.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              48.0
+              <radius units="nm" sector="NEQ">70.0</radius>
+              <radius units="nm" sector="SEQ">100.0</radius>
+              <radius units="nm" sector="SWQ">100.0</radius>
+              <radius units="nm" sector="NWQ">50.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              64.0
+              <radius units="nm" sector="NEQ">30.0</radius>
+              <radius units="nm" sector="SEQ">40.0</radius>
+              <radius units="nm" sector="SWQ">40.0</radius>
+              <radius units="nm" sector="NWQ">30.0</radius>
+            </windSpeed>
+          </windContours>
+          <vortexParameters>
+            <x>0.6203</x>
+          </vortexParameters>
+        </cycloneData>
+      </fix>
+      <fix>
+        <validTime>2011-02-01T07:00:00Z</validTime>
+        <latitude units="deg">-14.4833</latitude>
+        <longitude units="deg">154.7</longitude>
+        <accuracy units="nm">19.0</accuracy>
+        <cycloneData>
+          <category>4</category>
+          <minimumPressure>
+            <pressure units="hPa">953.0</pressure>
+          </minimumPressure>
+          <maximumWind>
+            <speed units="kt">92.5</speed>
+            <averagingPeriod units="s">600.0</averagingPeriod>
+            <radius units="nm">19.666666666666668</radius>
+            <gusts units="kt">130.0</gusts>
+            <gustAvgPeriod units="s">3.0</gustAvgPeriod>
+          </maximumWind>
+          <windContours>
+            <windSpeed units="kt">
+              34.0
+              <radius units="nm" sector="NEQ">160.0</radius>
+              <radius units="nm" sector="SEQ">175.0</radius>
+              <radius units="nm" sector="SWQ">175.0</radius>
+              <radius units="nm" sector="NWQ">120.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              48.0
+              <radius units="nm" sector="NEQ">70.0</radius>
+              <radius units="nm" sector="SEQ">100.0</radius>
+              <radius units="nm" sector="SWQ">100.0</radius>
+              <radius units="nm" sector="NWQ">50.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              64.0
+              <radius units="nm" sector="NEQ">30.0</radius>
+              <radius units="nm" sector="SEQ">40.0</radius>
+              <radius units="nm" sector="SWQ">40.0</radius>
+              <radius units="nm" sector="NWQ">30.0</radius>
+            </windSpeed>
+          </windContours>
+          <vortexParameters>
+            <x>0.634</x>
+          </vortexParameters>
+        </cycloneData>
+      </fix>
+      <fix>
+        <validTime>2011-02-01T08:00:00Z</validTime>
+        <latitude units="deg">-14.5667</latitude>
+        <longitude units="deg">154.4</longitude>
+        <accuracy units="nm">18.0</accuracy>
+        <cycloneData>
+          <category>4</category>
+          <minimumPressure>
+            <pressure units="hPa">951.0</pressure>
+          </minimumPressure>
+          <maximumWind>
+            <speed units="kt">95.0</speed>
+            <averagingPeriod units="s">600.0</averagingPeriod>
+            <radius units="nm">19.333333333333332</radius>
+            <gusts units="kt">135.0</gusts>
+            <gustAvgPeriod units="s">3.0</gustAvgPeriod>
+          </maximumWind>
+          <windContours>
+            <windSpeed units="kt">
+              34.0
+              <radius units="nm" sector="NEQ">160.0</radius>
+              <radius units="nm" sector="SEQ">175.0</radius>
+              <radius units="nm" sector="SWQ">175.0</radius>
+              <radius units="nm" sector="NWQ">120.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              48.0
+              <radius units="nm" sector="NEQ">70.0</radius>
+              <radius units="nm" sector="SEQ">100.0</radius>
+              <radius units="nm" sector="SWQ">100.0</radius>
+              <radius units="nm" sector="NWQ">50.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              64.0
+              <radius units="nm" sector="NEQ">30.0</radius>
+              <radius units="nm" sector="SEQ">40.0</radius>
+              <radius units="nm" sector="SWQ">40.0</radius>
+              <radius units="nm" sector="NWQ">30.0</radius>
+            </windSpeed>
+          </windContours>
+          <vortexParameters>
+            <x>0.6476</x>
+          </vortexParameters>
+        </cycloneData>
+      </fix>
+      <fix>
+        <validTime>2011-02-01T09:00:00Z</validTime>
+        <latitude units="deg">-14.65</latitude>
+        <longitude units="deg">154.1</longitude>
+        <accuracy units="nm">18.0</accuracy>
+        <cycloneData>
+          <category>4</category>
+          <minimumPressure>
+            <pressure units="hPa">948.0</pressure>
+          </minimumPressure>
+          <maximumWind>
+            <speed units="kt">97.5</speed>
+            <averagingPeriod units="s">600.0</averagingPeriod>
+            <radius units="nm">19.0</radius>
+            <gusts units="kt">135.0</gusts>
+            <gustAvgPeriod units="s">3.0</gustAvgPeriod>
+          </maximumWind>
+          <windContours>
+            <windSpeed units="kt">
+              34.0
+              <radius units="nm" sector="NEQ">160.0</radius>
+              <radius units="nm" sector="SEQ">175.0</radius>
+              <radius units="nm" sector="SWQ">175.0</radius>
+              <radius units="nm" sector="NWQ">120.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              48.0
+              <radius units="nm" sector="NEQ">70.0</radius>
+              <radius units="nm" sector="SEQ">100.0</radius>
+              <radius units="nm" sector="SWQ">100.0</radius>
+              <radius units="nm" sector="NWQ">50.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              64.0
+              <radius units="nm" sector="NEQ">30.0</radius>
+              <radius units="nm" sector="SEQ">40.0</radius>
+              <radius units="nm" sector="SWQ">40.0</radius>
+              <radius units="nm" sector="NWQ">30.0</radius>
+            </windSpeed>
+          </windContours>
+          <vortexParameters>
+            <x>0.6613</x>
+          </vortexParameters>
+        </cycloneData>
+      </fix>
+      <fix>
+        <validTime>2011-02-01T10:00:00Z</validTime>
+        <latitude units="deg">-14.7333</latitude>
+        <longitude units="deg">153.8</longitude>
+        <accuracy units="nm">17.0</accuracy>
+        <cycloneData>
+          <category>4</category>
+          <minimumPressure>
+            <pressure units="hPa">945.0</pressure>
+          </minimumPressure>
+          <maximumWind>
+            <speed units="kt">100.0</speed>
+            <averagingPeriod units="s">600.0</averagingPeriod>
+            <radius units="nm">18.666666666666668</radius>
+            <gusts units="kt">140.0</gusts>
+            <gustAvgPeriod units="s">3.0</gustAvgPeriod>
+          </maximumWind>
+          <windContours>
+            <windSpeed units="kt">
+              34.0
+              <radius units="nm" sector="NEQ">160.0</radius>
+              <radius units="nm" sector="SEQ">175.0</radius>
+              <radius units="nm" sector="SWQ">175.0</radius>
+              <radius units="nm" sector="NWQ">120.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              48.0
+              <radius units="nm" sector="NEQ">70.0</radius>
+              <radius units="nm" sector="SEQ">100.0</radius>
+              <radius units="nm" sector="SWQ">100.0</radius>
+              <radius units="nm" sector="NWQ">50.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              64.0
+              <radius units="nm" sector="NEQ">30.0</radius>
+              <radius units="nm" sector="SEQ">40.0</radius>
+              <radius units="nm" sector="SWQ">40.0</radius>
+              <radius units="nm" sector="NWQ">30.0</radius>
+            </windSpeed>
+          </windContours>
+          <vortexParameters>
+            <x>0.675</x>
+          </vortexParameters>
+        </cycloneData>
+      </fix>
+      <fix>
+        <validTime>2011-02-01T11:00:00Z</validTime>
+        <latitude units="deg">-14.8167</latitude>
+        <longitude units="deg">153.5</longitude>
+        <accuracy units="nm">16.0</accuracy>
+        <cycloneData>
+          <category>4</category>
+          <minimumPressure>
+            <pressure units="hPa">943.0</pressure>
+          </minimumPressure>
+          <maximumWind>
+            <speed units="kt">102.5</speed>
+            <averagingPeriod units="s">600.0</averagingPeriod>
+            <radius units="nm">18.333333333333332</radius>
+            <gusts units="kt">145.0</gusts>
+            <gustAvgPeriod units="s">3.0</gustAvgPeriod>
+          </maximumWind>
+          <windContours>
+            <windSpeed units="kt">
+              34.0
+              <radius units="nm" sector="NEQ">160.0</radius>
+              <radius units="nm" sector="SEQ">175.0</radius>
+              <radius units="nm" sector="SWQ">175.0</radius>
+              <radius units="nm" sector="NWQ">120.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              48.0
+              <radius units="nm" sector="NEQ">70.0</radius>
+              <radius units="nm" sector="SEQ">100.0</radius>
+              <radius units="nm" sector="SWQ">100.0</radius>
+              <radius units="nm" sector="NWQ">50.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              64.0
+              <radius units="nm" sector="NEQ">30.0</radius>
+              <radius units="nm" sector="SEQ">40.0</radius>
+              <radius units="nm" sector="SWQ">40.0</radius>
+              <radius units="nm" sector="NWQ">30.0</radius>
+            </windSpeed>
+          </windContours>
+          <vortexParameters>
+            <x>0.6886</x>
+          </vortexParameters>
+        </cycloneData>
+      </fix>
+      <fix>
+        <validTime>2011-02-01T12:00:00Z</validTime>
+        <latitude units="deg">-14.9</latitude>
+        <longitude units="deg">153.2</longitude>
+        <accuracy units="nm">15.0</accuracy>
+        <cycloneData>
+          <category>4</category>
+          <minimumPressure>
+            <pressure units="hPa">940.0</pressure>
+          </minimumPressure>
+          <lastClosedIsobar>
+            <pressure units="hPa">1004.0</pressure>
+            <radius units="nm">240.0</radius>
+          </lastClosedIsobar>
+          <maximumWind>
+            <speed units="kt">105.0</speed>
+            <averagingPeriod units="s">600.0</averagingPeriod>
+            <radius units="nm">18.0</radius>
+            <gusts units="kt">145.0</gusts>
+            <gustAvgPeriod units="s">3.0</gustAvgPeriod>
+          </maximumWind>
+          <windContours>
+            <windSpeed units="kt">
+              34.0
+              <radius units="nm" sector="NEQ">160.0</radius>
+              <radius units="nm" sector="SEQ">210.0</radius>
+              <radius units="nm" sector="SWQ">210.0</radius>
+              <radius units="nm" sector="NWQ">90.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              48.0
+              <radius units="nm" sector="NEQ">70.0</radius>
+              <radius units="nm" sector="SEQ">100.0</radius>
+              <radius units="nm" sector="SWQ">120.0</radius>
+              <radius units="nm" sector="NWQ">60.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              64.0
+              <radius units="nm" sector="NEQ">30.0</radius>
+              <radius units="nm" sector="SEQ">40.0</radius>
+              <radius units="nm" sector="SWQ">40.0</radius>
+              <radius units="nm" sector="NWQ">30.0</radius>
+            </windSpeed>
+          </windContours>
+          <vortexParameters>
+            <x>0.7023</x>
+          </vortexParameters>
+        </cycloneData>
+      </fix>
+      <fix>
+        <validTime>2011-02-01T13:00:00Z</validTime>
+        <latitude units="deg">-15.0333</latitude>
+        <longitude units="deg">152.95</longitude>
+        <accuracy units="nm">14.0</accuracy>
+        <cycloneData>
+          <category>4</category>
+          <minimumPressure>
+            <pressure units="hPa">940.0</pressure>
+          </minimumPressure>
+          <maximumWind>
+            <speed units="kt">105.0</speed>
+            <averagingPeriod units="s">600.0</averagingPeriod>
+            <radius units="nm">17.5</radius>
+            <gusts units="kt">145.0</gusts>
+            <gustAvgPeriod units="s">3.0</gustAvgPeriod>
+          </maximumWind>
+          <windContours>
+            <windSpeed units="kt">
+              34.0
+              <radius units="nm" sector="NEQ">160.0</radius>
+              <radius units="nm" sector="SEQ">210.0</radius>
+              <radius units="nm" sector="SWQ">210.0</radius>
+              <radius units="nm" sector="NWQ">90.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              48.0
+              <radius units="nm" sector="NEQ">70.0</radius>
+              <radius units="nm" sector="SEQ">100.0</radius>
+              <radius units="nm" sector="SWQ">120.0</radius>
+              <radius units="nm" sector="NWQ">60.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              64.0
+              <radius units="nm" sector="NEQ">30.0</radius>
+              <radius units="nm" sector="SEQ">40.0</radius>
+              <radius units="nm" sector="SWQ">40.0</radius>
+              <radius units="nm" sector="NWQ">30.0</radius>
+            </windSpeed>
+          </windContours>
+          <vortexParameters>
+            <x>0.7022</x>
+          </vortexParameters>
+        </cycloneData>
+      </fix>
+      <fix>
+        <validTime>2011-02-01T14:00:00Z</validTime>
+        <latitude units="deg">-15.1667</latitude>
+        <longitude units="deg">152.7</longitude>
+        <accuracy units="nm">13.0</accuracy>
+        <cycloneData>
+          <category>4</category>
+          <minimumPressure>
+            <pressure units="hPa">939.0</pressure>
+          </minimumPressure>
+          <maximumWind>
+            <speed units="kt">105.0</speed>
+            <averagingPeriod units="s">600.0</averagingPeriod>
+            <radius units="nm">17.0</radius>
+            <gusts units="kt">145.0</gusts>
+            <gustAvgPeriod units="s">3.0</gustAvgPeriod>
+          </maximumWind>
+          <windContours>
+            <windSpeed units="kt">
+              34.0
+              <radius units="nm" sector="NEQ">160.0</radius>
+              <radius units="nm" sector="SEQ">210.0</radius>
+              <radius units="nm" sector="SWQ">210.0</radius>
+              <radius units="nm" sector="NWQ">90.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              48.0
+              <radius units="nm" sector="NEQ">70.0</radius>
+              <radius units="nm" sector="SEQ">100.0</radius>
+              <radius units="nm" sector="SWQ">120.0</radius>
+              <radius units="nm" sector="NWQ">60.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              64.0
+              <radius units="nm" sector="NEQ">30.0</radius>
+              <radius units="nm" sector="SEQ">40.0</radius>
+              <radius units="nm" sector="SWQ">40.0</radius>
+              <radius units="nm" sector="NWQ">30.0</radius>
+            </windSpeed>
+          </windContours>
+          <vortexParameters>
+            <x>0.702</x>
+          </vortexParameters>
+        </cycloneData>
+      </fix>
+      <fix>
+        <validTime>2011-02-01T15:00:00Z</validTime>
+        <latitude units="deg">-15.3</latitude>
+        <longitude units="deg">152.45</longitude>
+        <accuracy units="nm">12.0</accuracy>
+        <cycloneData>
+          <category>4</category>
+          <minimumPressure>
+            <pressure units="hPa">939.0</pressure>
+          </minimumPressure>
+          <maximumWind>
+            <speed units="kt">105.0</speed>
+            <averagingPeriod units="s">600.0</averagingPeriod>
+            <radius units="nm">16.5</radius>
+            <gusts units="kt">145.0</gusts>
+            <gustAvgPeriod units="s">3.0</gustAvgPeriod>
+          </maximumWind>
+          <windContours>
+            <windSpeed units="kt">
+              34.0
+              <radius units="nm" sector="NEQ">160.0</radius>
+              <radius units="nm" sector="SEQ">210.0</radius>
+              <radius units="nm" sector="SWQ">210.0</radius>
+              <radius units="nm" sector="NWQ">90.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              48.0
+              <radius units="nm" sector="NEQ">70.0</radius>
+              <radius units="nm" sector="SEQ">100.0</radius>
+              <radius units="nm" sector="SWQ">120.0</radius>
+              <radius units="nm" sector="NWQ">60.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              64.0
+              <radius units="nm" sector="NEQ">30.0</radius>
+              <radius units="nm" sector="SEQ">40.0</radius>
+              <radius units="nm" sector="SWQ">40.0</radius>
+              <radius units="nm" sector="NWQ">30.0</radius>
+            </windSpeed>
+          </windContours>
+          <vortexParameters>
+            <x>0.7019</x>
+          </vortexParameters>
+        </cycloneData>
+      </fix>
+      <fix>
+        <validTime>2011-02-01T16:00:00Z</validTime>
+        <latitude units="deg">-15.4333</latitude>
+        <longitude units="deg">152.2</longitude>
+        <accuracy units="nm">10.0</accuracy>
+        <cycloneData>
+          <category>4</category>
+          <minimumPressure>
+            <pressure units="hPa">939.0</pressure>
+          </minimumPressure>
+          <maximumWind>
+            <speed units="kt">105.0</speed>
+            <averagingPeriod units="s">600.0</averagingPeriod>
+            <radius units="nm">16.0</radius>
+            <gusts units="kt">145.0</gusts>
+            <gustAvgPeriod units="s">3.0</gustAvgPeriod>
+          </maximumWind>
+          <windContours>
+            <windSpeed units="kt">
+              34.0
+              <radius units="nm" sector="NEQ">160.0</radius>
+              <radius units="nm" sector="SEQ">210.0</radius>
+              <radius units="nm" sector="SWQ">210.0</radius>
+              <radius units="nm" sector="NWQ">90.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              48.0
+              <radius units="nm" sector="NEQ">70.0</radius>
+              <radius units="nm" sector="SEQ">100.0</radius>
+              <radius units="nm" sector="SWQ">120.0</radius>
+              <radius units="nm" sector="NWQ">60.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              64.0
+              <radius units="nm" sector="NEQ">30.0</radius>
+              <radius units="nm" sector="SEQ">40.0</radius>
+              <radius units="nm" sector="SWQ">40.0</radius>
+              <radius units="nm" sector="NWQ">30.0</radius>
+            </windSpeed>
+          </windContours>
+          <vortexParameters>
+            <x>0.7018</x>
+          </vortexParameters>
+        </cycloneData>
+      </fix>
+      <fix>
+        <validTime>2011-02-01T17:00:00Z</validTime>
+        <latitude units="deg">-15.5667</latitude>
+        <longitude units="deg">151.95</longitude>
+        <accuracy units="nm">9.0</accuracy>
+        <cycloneData>
+          <category>4</category>
+          <minimumPressure>
+            <pressure units="hPa">938.0</pressure>
+          </minimumPressure>
+          <maximumWind>
+            <speed units="kt">105.0</speed>
+            <averagingPeriod units="s">600.0</averagingPeriod>
+            <radius units="nm">15.5</radius>
+            <gusts units="kt">145.0</gusts>
+            <gustAvgPeriod units="s">3.0</gustAvgPeriod>
+          </maximumWind>
+          <windContours>
+            <windSpeed units="kt">
+              34.0
+              <radius units="nm" sector="NEQ">160.0</radius>
+              <radius units="nm" sector="SEQ">210.0</radius>
+              <radius units="nm" sector="SWQ">210.0</radius>
+              <radius units="nm" sector="NWQ">90.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              48.0
+              <radius units="nm" sector="NEQ">70.0</radius>
+              <radius units="nm" sector="SEQ">100.0</radius>
+              <radius units="nm" sector="SWQ">120.0</radius>
+              <radius units="nm" sector="NWQ">60.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              64.0
+              <radius units="nm" sector="NEQ">30.0</radius>
+              <radius units="nm" sector="SEQ">40.0</radius>
+              <radius units="nm" sector="SWQ">40.0</radius>
+              <radius units="nm" sector="NWQ">30.0</radius>
+            </windSpeed>
+          </windContours>
+          <vortexParameters>
+            <x>0.7016</x>
+          </vortexParameters>
+        </cycloneData>
+      </fix>
+      <fix>
+        <validTime>2011-02-01T18:00:00Z</validTime>
+        <latitude units="deg">-15.7</latitude>
+        <longitude units="deg">151.7</longitude>
+        <accuracy units="nm">8.0</accuracy>
+        <cycloneData>
+          <category>4</category>
+          <minimumPressure>
+            <pressure units="hPa">938.0</pressure>
+          </minimumPressure>
+          <lastClosedIsobar>
+            <pressure units="hPa">1002.0</pressure>
+            <radius units="nm">220.0</radius>
+          </lastClosedIsobar>
+          <maximumWind>
+            <speed units="kt">105.0</speed>
+            <averagingPeriod units="s">600.0</averagingPeriod>
+            <radius units="nm">15.0</radius>
+            <gusts units="kt">150.0</gusts>
+            <gustAvgPeriod units="s">3.0</gustAvgPeriod>
+          </maximumWind>
+          <windContours>
+            <windSpeed units="kt">
+              34.0
+              <radius units="nm" sector="NEQ">160.0</radius>
+              <radius units="nm" sector="SEQ">200.0</radius>
+              <radius units="nm" sector="SWQ">200.0</radius>
+              <radius units="nm" sector="NWQ">110.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              48.0
+              <radius units="nm" sector="NEQ">80.0</radius>
+              <radius units="nm" sector="SEQ">100.0</radius>
+              <radius units="nm" sector="SWQ">115.0</radius>
+              <radius units="nm" sector="NWQ">60.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              64.0
+              <radius units="nm" sector="NEQ">30.0</radius>
+              <radius units="nm" sector="SEQ">40.0</radius>
+              <radius units="nm" sector="SWQ">40.0</radius>
+              <radius units="nm" sector="NWQ">30.0</radius>
+            </windSpeed>
+          </windContours>
+          <vortexParameters>
+            <x>0.7015</x>
+          </vortexParameters>
+        </cycloneData>
+      </fix>
+      <fix>
+        <validTime>2011-02-01T19:00:00Z</validTime>
+        <latitude units="deg">-15.8333</latitude>
+        <longitude units="deg">151.3667</longitude>
+        <accuracy units="nm">8.0</accuracy>
+        <cycloneData>
+          <category>4</category>
+          <minimumPressure>
+            <pressure units="hPa">938.0</pressure>
+          </minimumPressure>
+          <maximumWind>
+            <speed units="kt">105.0</speed>
+            <averagingPeriod units="s">600.0</averagingPeriod>
+            <radius units="nm">15.0</radius>
+            <gusts units="kt">145.0</gusts>
+            <gustAvgPeriod units="s">3.0</gustAvgPeriod>
+          </maximumWind>
+          <windContours>
+            <windSpeed units="kt">
+              34.0
+              <radius units="nm" sector="NEQ">160.0</radius>
+              <radius units="nm" sector="SEQ">200.0</radius>
+              <radius units="nm" sector="SWQ">200.0</radius>
+              <radius units="nm" sector="NWQ">110.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              48.0
+              <radius units="nm" sector="NEQ">80.0</radius>
+              <radius units="nm" sector="SEQ">100.0</radius>
+              <radius units="nm" sector="SWQ">115.0</radius>
+              <radius units="nm" sector="NWQ">60.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              64.0
+              <radius units="nm" sector="NEQ">30.0</radius>
+              <radius units="nm" sector="SEQ">40.0</radius>
+              <radius units="nm" sector="SWQ">40.0</radius>
+              <radius units="nm" sector="NWQ">30.0</radius>
+            </windSpeed>
+          </windContours>
+          <vortexParameters>
+            <x>0.7014</x>
+          </vortexParameters>
+        </cycloneData>
+      </fix>
+      <fix>
+        <validTime>2011-02-01T20:00:00Z</validTime>
+        <latitude units="deg">-15.9667</latitude>
+        <longitude units="deg">151.0333</longitude>
+        <accuracy units="nm">9.0</accuracy>
+        <cycloneData>
+          <category>4</category>
+          <minimumPressure>
+            <pressure units="hPa">938.0</pressure>
+          </minimumPressure>
+          <maximumWind>
+            <speed units="kt">105.0</speed>
+            <averagingPeriod units="s">600.0</averagingPeriod>
+            <radius units="nm">15.0</radius>
+            <gusts units="kt">145.0</gusts>
+            <gustAvgPeriod units="s">3.0</gustAvgPeriod>
+          </maximumWind>
+          <windContours>
+            <windSpeed units="kt">
+              34.0
+              <radius units="nm" sector="NEQ">160.0</radius>
+              <radius units="nm" sector="SEQ">200.0</radius>
+              <radius units="nm" sector="SWQ">200.0</radius>
+              <radius units="nm" sector="NWQ">110.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              48.0
+              <radius units="nm" sector="NEQ">80.0</radius>
+              <radius units="nm" sector="SEQ">100.0</radius>
+              <radius units="nm" sector="SWQ">115.0</radius>
+              <radius units="nm" sector="NWQ">60.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              64.0
+              <radius units="nm" sector="NEQ">30.0</radius>
+              <radius units="nm" sector="SEQ">40.0</radius>
+              <radius units="nm" sector="SWQ">40.0</radius>
+              <radius units="nm" sector="NWQ">30.0</radius>
+            </windSpeed>
+          </windContours>
+          <vortexParameters>
+            <x>0.7012</x>
+          </vortexParameters>
+        </cycloneData>
+      </fix>
+      <fix>
+        <validTime>2011-02-01T21:00:00Z</validTime>
+        <latitude units="deg">-16.1</latitude>
+        <longitude units="deg">150.7</longitude>
+        <accuracy units="nm">9.0</accuracy>
+        <cycloneData>
+          <category>4</category>
+          <minimumPressure>
+            <pressure units="hPa">938.0</pressure>
+          </minimumPressure>
+          <maximumWind>
+            <speed units="kt">105.0</speed>
+            <averagingPeriod units="s">600.0</averagingPeriod>
+            <radius units="nm">15.0</radius>
+            <gusts units="kt">145.0</gusts>
+            <gustAvgPeriod units="s">3.0</gustAvgPeriod>
+          </maximumWind>
+          <windContours>
+            <windSpeed units="kt">
+              34.0
+              <radius units="nm" sector="NEQ">160.0</radius>
+              <radius units="nm" sector="SEQ">200.0</radius>
+              <radius units="nm" sector="SWQ">200.0</radius>
+              <radius units="nm" sector="NWQ">110.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              48.0
+              <radius units="nm" sector="NEQ">80.0</radius>
+              <radius units="nm" sector="SEQ">100.0</radius>
+              <radius units="nm" sector="SWQ">115.0</radius>
+              <radius units="nm" sector="NWQ">60.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              64.0
+              <radius units="nm" sector="NEQ">30.0</radius>
+              <radius units="nm" sector="SEQ">40.0</radius>
+              <radius units="nm" sector="SWQ">40.0</radius>
+              <radius units="nm" sector="NWQ">30.0</radius>
+            </windSpeed>
+          </windContours>
+          <vortexParameters>
+            <x>0.7011</x>
+          </vortexParameters>
+        </cycloneData>
+      </fix>
+      <fix>
+        <validTime>2011-02-01T22:00:00Z</validTime>
+        <latitude units="deg">-16.2333</latitude>
+        <longitude units="deg">150.3667</longitude>
+        <accuracy units="nm">9.0</accuracy>
+        <cycloneData>
+          <category>4</category>
+          <minimumPressure>
+            <pressure units="hPa">937.0</pressure>
+          </minimumPressure>
+          <maximumWind>
+            <speed units="kt">105.0</speed>
+            <averagingPeriod units="s">600.0</averagingPeriod>
+            <radius units="nm">15.0</radius>
+            <gusts units="kt">145.0</gusts>
+            <gustAvgPeriod units="s">3.0</gustAvgPeriod>
+          </maximumWind>
+          <windContours>
+            <windSpeed units="kt">
+              34.0
+              <radius units="nm" sector="NEQ">160.0</radius>
+              <radius units="nm" sector="SEQ">200.0</radius>
+              <radius units="nm" sector="SWQ">200.0</radius>
+              <radius units="nm" sector="NWQ">110.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              48.0
+              <radius units="nm" sector="NEQ">80.0</radius>
+              <radius units="nm" sector="SEQ">100.0</radius>
+              <radius units="nm" sector="SWQ">115.0</radius>
+              <radius units="nm" sector="NWQ">60.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              64.0
+              <radius units="nm" sector="NEQ">30.0</radius>
+              <radius units="nm" sector="SEQ">40.0</radius>
+              <radius units="nm" sector="SWQ">40.0</radius>
+              <radius units="nm" sector="NWQ">30.0</radius>
+            </windSpeed>
+          </windContours>
+          <vortexParameters>
+            <x>0.701</x>
+          </vortexParameters>
+        </cycloneData>
+      </fix>
+      <fix>
+        <validTime>2011-02-01T23:00:00Z</validTime>
+        <latitude units="deg">-16.3667</latitude>
+        <longitude units="deg">150.0333</longitude>
+        <accuracy units="nm">10.0</accuracy>
+        <cycloneData>
+          <category>4</category>
+          <minimumPressure>
+            <pressure units="hPa">937.0</pressure>
+          </minimumPressure>
+          <maximumWind>
+            <speed units="kt">105.0</speed>
+            <averagingPeriod units="s">600.0</averagingPeriod>
+            <radius units="nm">15.0</radius>
+            <gusts units="kt">145.0</gusts>
+            <gustAvgPeriod units="s">3.0</gustAvgPeriod>
+          </maximumWind>
+          <windContours>
+            <windSpeed units="kt">
+              34.0
+              <radius units="nm" sector="NEQ">160.0</radius>
+              <radius units="nm" sector="SEQ">200.0</radius>
+              <radius units="nm" sector="SWQ">200.0</radius>
+              <radius units="nm" sector="NWQ">110.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              48.0
+              <radius units="nm" sector="NEQ">80.0</radius>
+              <radius units="nm" sector="SEQ">100.0</radius>
+              <radius units="nm" sector="SWQ">115.0</radius>
+              <radius units="nm" sector="NWQ">60.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              64.0
+              <radius units="nm" sector="NEQ">30.0</radius>
+              <radius units="nm" sector="SEQ">40.0</radius>
+              <radius units="nm" sector="SWQ">40.0</radius>
+              <radius units="nm" sector="NWQ">30.0</radius>
+            </windSpeed>
+          </windContours>
+          <vortexParameters>
+            <x>0.7008</x>
+          </vortexParameters>
+        </cycloneData>
+      </fix>
+      <fix>
+        <validTime>2011-02-02T00:00:00Z</validTime>
+        <latitude units="deg">-16.5</latitude>
+        <longitude units="deg">149.7</longitude>
+        <accuracy units="nm">10.0</accuracy>
+        <cycloneData>
+          <category>4</category>
+          <minimumPressure>
+            <pressure units="hPa">937.0</pressure>
+          </minimumPressure>
+          <lastClosedIsobar>
+            <pressure units="hPa">1001.0</pressure>
+            <radius units="nm">200.0</radius>
+          </lastClosedIsobar>
+          <maximumWind>
+            <speed units="kt">105.0</speed>
+            <averagingPeriod units="s">600.0</averagingPeriod>
+            <radius units="nm">15.0</radius>
+            <gusts units="kt">150.0</gusts>
+            <gustAvgPeriod units="s">3.0</gustAvgPeriod>
+          </maximumWind>
+          <windContours>
+            <windSpeed units="kt">
+              34.0
+              <radius units="nm" sector="NEQ">160.0</radius>
+              <radius units="nm" sector="SEQ">250.0</radius>
+              <radius units="nm" sector="SWQ">240.0</radius>
+              <radius units="nm" sector="NWQ">180.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              48.0
+              <radius units="nm" sector="NEQ">80.0</radius>
+              <radius units="nm" sector="SEQ">110.0</radius>
+              <radius units="nm" sector="SWQ">110.0</radius>
+              <radius units="nm" sector="NWQ">70.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              64.0
+              <radius units="nm" sector="NEQ">30.0</radius>
+              <radius units="nm" sector="SEQ">40.0</radius>
+              <radius units="nm" sector="SWQ">50.0</radius>
+              <radius units="nm" sector="NWQ">30.0</radius>
+            </windSpeed>
+          </windContours>
+          <vortexParameters>
+            <x>0.7007</x>
+          </vortexParameters>
+        </cycloneData>
+      </fix>
+      <fix>
+        <validTime>2011-02-02T01:00:00Z</validTime>
+        <latitude units="deg">-16.6</latitude>
+        <longitude units="deg">149.4333</longitude>
+        <accuracy units="nm">10.0</accuracy>
+        <cycloneData>
+          <category>4</category>
+          <minimumPressure>
+            <pressure units="hPa">936.0</pressure>
+          </minimumPressure>
+          <maximumWind>
+            <speed units="kt">105.8333</speed>
+            <averagingPeriod units="s">600.0</averagingPeriod>
+            <radius units="nm">14.666666666666666</radius>
+            <gusts units="kt">150.0</gusts>
+            <gustAvgPeriod units="s">3.0</gustAvgPeriod>
+          </maximumWind>
+          <windContours>
+            <windSpeed units="kt">
+              34.0
+              <radius units="nm" sector="NEQ">160.0</radius>
+              <radius units="nm" sector="SEQ">250.0</radius>
+              <radius units="nm" sector="SWQ">240.0</radius>
+              <radius units="nm" sector="NWQ">180.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              48.0
+              <radius units="nm" sector="NEQ">80.0</radius>
+              <radius units="nm" sector="SEQ">110.0</radius>
+              <radius units="nm" sector="SWQ">110.0</radius>
+              <radius units="nm" sector="NWQ">70.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              64.0
+              <radius units="nm" sector="NEQ">30.0</radius>
+              <radius units="nm" sector="SEQ">40.0</radius>
+              <radius units="nm" sector="SWQ">50.0</radius>
+              <radius units="nm" sector="NWQ">30.0</radius>
+            </windSpeed>
+          </windContours>
+          <vortexParameters>
+            <x>0.7052</x>
+          </vortexParameters>
+        </cycloneData>
+      </fix>
+      <fix>
+        <validTime>2011-02-02T02:00:00Z</validTime>
+        <latitude units="deg">-16.7</latitude>
+        <longitude units="deg">149.1667</longitude>
+        <accuracy units="nm">9.0</accuracy>
+        <cycloneData>
+          <category>4</category>
+          <minimumPressure>
+            <pressure units="hPa">935.0</pressure>
+          </minimumPressure>
+          <maximumWind>
+            <speed units="kt">106.6667</speed>
+            <averagingPeriod units="s">600.0</averagingPeriod>
+            <radius units="nm">14.333333333333334</radius>
+            <gusts units="kt">150.0</gusts>
+            <gustAvgPeriod units="s">3.0</gustAvgPeriod>
+          </maximumWind>
+          <windContours>
+            <windSpeed units="kt">
+              34.0
+              <radius units="nm" sector="NEQ">160.0</radius>
+              <radius units="nm" sector="SEQ">250.0</radius>
+              <radius units="nm" sector="SWQ">240.0</radius>
+              <radius units="nm" sector="NWQ">180.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              48.0
+              <radius units="nm" sector="NEQ">80.0</radius>
+              <radius units="nm" sector="SEQ">110.0</radius>
+              <radius units="nm" sector="SWQ">110.0</radius>
+              <radius units="nm" sector="NWQ">70.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              64.0
+              <radius units="nm" sector="NEQ">30.0</radius>
+              <radius units="nm" sector="SEQ">40.0</radius>
+              <radius units="nm" sector="SWQ">50.0</radius>
+              <radius units="nm" sector="NWQ">30.0</radius>
+            </windSpeed>
+          </windContours>
+          <vortexParameters>
+            <x>0.7097</x>
+          </vortexParameters>
+        </cycloneData>
+      </fix>
+      <fix>
+        <validTime>2011-02-02T03:00:00Z</validTime>
+        <latitude units="deg">-16.8</latitude>
+        <longitude units="deg">148.9</longitude>
+        <accuracy units="nm">9.0</accuracy>
+        <cycloneData>
+          <category>5</category>
+          <minimumPressure>
+            <pressure units="hPa">934.0</pressure>
+          </minimumPressure>
+          <maximumWind>
+            <speed units="kt">107.5</speed>
+            <averagingPeriod units="s">600.0</averagingPeriod>
+            <radius units="nm">14.0</radius>
+            <gusts units="kt">155.0</gusts>
+            <gustAvgPeriod units="s">3.0</gustAvgPeriod>
+          </maximumWind>
+          <windContours>
+            <windSpeed units="kt">
+              34.0
+              <radius units="nm" sector="NEQ">160.0</radius>
+              <radius units="nm" sector="SEQ">250.0</radius>
+              <radius units="nm" sector="SWQ">240.0</radius>
+              <radius units="nm" sector="NWQ">180.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              48.0
+              <radius units="nm" sector="NEQ">80.0</radius>
+              <radius units="nm" sector="SEQ">110.0</radius>
+              <radius units="nm" sector="SWQ">110.0</radius>
+              <radius units="nm" sector="NWQ">70.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              64.0
+              <radius units="nm" sector="NEQ">30.0</radius>
+              <radius units="nm" sector="SEQ">40.0</radius>
+              <radius units="nm" sector="SWQ">50.0</radius>
+              <radius units="nm" sector="NWQ">30.0</radius>
+            </windSpeed>
+          </windContours>
+          <vortexParameters>
+            <x>0.7141</x>
+          </vortexParameters>
+        </cycloneData>
+      </fix>
+      <fix>
+        <validTime>2011-02-02T04:00:00Z</validTime>
+        <latitude units="deg">-16.9</latitude>
+        <longitude units="deg">148.6333</longitude>
+        <accuracy units="nm">9.0</accuracy>
+        <cycloneData>
+          <category>5</category>
+          <minimumPressure>
+            <pressure units="hPa">933.0</pressure>
+          </minimumPressure>
+          <maximumWind>
+            <speed units="kt">108.3333</speed>
+            <averagingPeriod units="s">600.0</averagingPeriod>
+            <radius units="nm">13.666666666666666</radius>
+            <gusts units="kt">155.0</gusts>
+            <gustAvgPeriod units="s">3.0</gustAvgPeriod>
+          </maximumWind>
+          <windContours>
+            <windSpeed units="kt">
+              34.0
+              <radius units="nm" sector="NEQ">160.0</radius>
+              <radius units="nm" sector="SEQ">250.0</radius>
+              <radius units="nm" sector="SWQ">240.0</radius>
+              <radius units="nm" sector="NWQ">180.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              48.0
+              <radius units="nm" sector="NEQ">80.0</radius>
+              <radius units="nm" sector="SEQ">110.0</radius>
+              <radius units="nm" sector="SWQ">110.0</radius>
+              <radius units="nm" sector="NWQ">70.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              64.0
+              <radius units="nm" sector="NEQ">30.0</radius>
+              <radius units="nm" sector="SEQ">40.0</radius>
+              <radius units="nm" sector="SWQ">50.0</radius>
+              <radius units="nm" sector="NWQ">30.0</radius>
+            </windSpeed>
+          </windContours>
+          <vortexParameters>
+            <x>0.7186</x>
+          </vortexParameters>
+        </cycloneData>
+      </fix>
+      <fix>
+        <validTime>2011-02-02T05:00:00Z</validTime>
+        <latitude units="deg">-17.0</latitude>
+        <longitude units="deg">148.3667</longitude>
+        <accuracy units="nm">8.0</accuracy>
+        <cycloneData>
+          <category>5</category>
+          <minimumPressure>
+            <pressure units="hPa">932.0</pressure>
+          </minimumPressure>
+          <maximumWind>
+            <speed units="kt">109.1667</speed>
+            <averagingPeriod units="s">600.0</averagingPeriod>
+            <radius units="nm">13.333333333333334</radius>
+            <gusts units="kt">155.0</gusts>
+            <gustAvgPeriod units="s">3.0</gustAvgPeriod>
+          </maximumWind>
+          <windContours>
+            <windSpeed units="kt">
+              34.0
+              <radius units="nm" sector="NEQ">160.0</radius>
+              <radius units="nm" sector="SEQ">250.0</radius>
+              <radius units="nm" sector="SWQ">240.0</radius>
+              <radius units="nm" sector="NWQ">180.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              48.0
+              <radius units="nm" sector="NEQ">80.0</radius>
+              <radius units="nm" sector="SEQ">110.0</radius>
+              <radius units="nm" sector="SWQ">110.0</radius>
+              <radius units="nm" sector="NWQ">70.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              64.0
+              <radius units="nm" sector="NEQ">30.0</radius>
+              <radius units="nm" sector="SEQ">40.0</radius>
+              <radius units="nm" sector="SWQ">50.0</radius>
+              <radius units="nm" sector="NWQ">30.0</radius>
+            </windSpeed>
+          </windContours>
+          <vortexParameters>
+            <x>0.7231</x>
+          </vortexParameters>
+        </cycloneData>
+      </fix>
+      <fix>
+        <validTime>2011-02-02T06:00:00Z</validTime>
+        <latitude units="deg">-17.1</latitude>
+        <longitude units="deg">148.1</longitude>
+        <accuracy units="nm">8.0</accuracy>
+        <cycloneData>
+          <category>5</category>
+          <minimumPressure>
+            <pressure units="hPa">931.0</pressure>
+          </minimumPressure>
+          <lastClosedIsobar>
+            <pressure units="hPa">1001.0</pressure>
+            <radius units="nm">200.0</radius>
+          </lastClosedIsobar>
+          <maximumWind>
+            <speed units="kt">110.0</speed>
+            <averagingPeriod units="s">600.0</averagingPeriod>
+            <radius units="nm">13.0</radius>
+            <gusts units="kt">155.0</gusts>
+            <gustAvgPeriod units="s">3.0</gustAvgPeriod>
+          </maximumWind>
+          <windContours>
+            <windSpeed units="kt">
+              34.0
+              <radius units="nm" sector="NEQ">160.0</radius>
+              <radius units="nm" sector="SEQ">250.0</radius>
+              <radius units="nm" sector="SWQ">160.0</radius>
+              <radius units="nm" sector="NWQ">120.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              48.0
+              <radius units="nm" sector="NEQ">80.0</radius>
+              <radius units="nm" sector="SEQ">110.0</radius>
+              <radius units="nm" sector="SWQ">120.0</radius>
+              <radius units="nm" sector="NWQ">70.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              64.0
+              <radius units="nm" sector="NEQ">30.0</radius>
+              <radius units="nm" sector="SEQ">40.0</radius>
+              <radius units="nm" sector="SWQ">60.0</radius>
+              <radius units="nm" sector="NWQ">30.0</radius>
+            </windSpeed>
+          </windContours>
+          <vortexParameters>
+            <x>0.7276</x>
+          </vortexParameters>
+        </cycloneData>
+      </fix>
+      <fix>
+        <validTime>2011-02-02T07:00:00Z</validTime>
+        <latitude units="deg">-17.1667</latitude>
+        <longitude units="deg">147.8833</longitude>
+        <accuracy units="nm">8.0</accuracy>
+        <cycloneData>
+          <category>5</category>
+          <minimumPressure>
+            <pressure units="hPa">931.0</pressure>
+          </minimumPressure>
+          <maximumWind>
+            <speed units="kt">110.0</speed>
+            <averagingPeriod units="s">600.0</averagingPeriod>
+            <radius units="nm">12.833333333333334</radius>
+            <gusts units="kt">155.0</gusts>
+            <gustAvgPeriod units="s">3.0</gustAvgPeriod>
+          </maximumWind>
+          <windContours>
+            <windSpeed units="kt">
+              34.0
+              <radius units="nm" sector="NEQ">160.0</radius>
+              <radius units="nm" sector="SEQ">250.0</radius>
+              <radius units="nm" sector="SWQ">160.0</radius>
+              <radius units="nm" sector="NWQ">120.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              48.0
+              <radius units="nm" sector="NEQ">80.0</radius>
+              <radius units="nm" sector="SEQ">110.0</radius>
+              <radius units="nm" sector="SWQ">120.0</radius>
+              <radius units="nm" sector="NWQ">70.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              64.0
+              <radius units="nm" sector="NEQ">30.0</radius>
+              <radius units="nm" sector="SEQ">40.0</radius>
+              <radius units="nm" sector="SWQ">60.0</radius>
+              <radius units="nm" sector="NWQ">30.0</radius>
+            </windSpeed>
+          </windContours>
+          <vortexParameters>
+            <x>0.7275</x>
+          </vortexParameters>
+        </cycloneData>
+      </fix>
+      <fix>
+        <validTime>2011-02-02T08:00:00Z</validTime>
+        <latitude units="deg">-17.2333</latitude>
+        <longitude units="deg">147.6667</longitude>
+        <accuracy units="nm">8.0</accuracy>
+        <cycloneData>
+          <category>5</category>
+          <minimumPressure>
+            <pressure units="hPa">931.0</pressure>
+          </minimumPressure>
+          <maximumWind>
+            <speed units="kt">110.0</speed>
+            <averagingPeriod units="s">600.0</averagingPeriod>
+            <radius units="nm">12.666666666666666</radius>
+            <gusts units="kt">155.0</gusts>
+            <gustAvgPeriod units="s">3.0</gustAvgPeriod>
+          </maximumWind>
+          <windContours>
+            <windSpeed units="kt">
+              34.0
+              <radius units="nm" sector="NEQ">160.0</radius>
+              <radius units="nm" sector="SEQ">250.0</radius>
+              <radius units="nm" sector="SWQ">160.0</radius>
+              <radius units="nm" sector="NWQ">120.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              48.0
+              <radius units="nm" sector="NEQ">80.0</radius>
+              <radius units="nm" sector="SEQ">110.0</radius>
+              <radius units="nm" sector="SWQ">120.0</radius>
+              <radius units="nm" sector="NWQ">70.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              64.0
+              <radius units="nm" sector="NEQ">30.0</radius>
+              <radius units="nm" sector="SEQ">40.0</radius>
+              <radius units="nm" sector="SWQ">60.0</radius>
+              <radius units="nm" sector="NWQ">30.0</radius>
+            </windSpeed>
+          </windContours>
+          <vortexParameters>
+            <x>0.7275</x>
+          </vortexParameters>
+        </cycloneData>
+      </fix>
+      <fix>
+        <validTime>2011-02-02T09:00:00Z</validTime>
+        <latitude units="deg">-17.3</latitude>
+        <longitude units="deg">147.45</longitude>
+        <accuracy units="nm">8.0</accuracy>
+        <cycloneData>
+          <category>5</category>
+          <minimumPressure>
+            <pressure units="hPa">931.0</pressure>
+          </minimumPressure>
+          <maximumWind>
+            <speed units="kt">110.0</speed>
+            <averagingPeriod units="s">600.0</averagingPeriod>
+            <radius units="nm">12.5</radius>
+            <gusts units="kt">155.0</gusts>
+            <gustAvgPeriod units="s">3.0</gustAvgPeriod>
+          </maximumWind>
+          <windContours>
+            <windSpeed units="kt">
+              34.0
+              <radius units="nm" sector="NEQ">160.0</radius>
+              <radius units="nm" sector="SEQ">250.0</radius>
+              <radius units="nm" sector="SWQ">160.0</radius>
+              <radius units="nm" sector="NWQ">120.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              48.0
+              <radius units="nm" sector="NEQ">80.0</radius>
+              <radius units="nm" sector="SEQ">110.0</radius>
+              <radius units="nm" sector="SWQ">120.0</radius>
+              <radius units="nm" sector="NWQ">70.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              64.0
+              <radius units="nm" sector="NEQ">30.0</radius>
+              <radius units="nm" sector="SEQ">40.0</radius>
+              <radius units="nm" sector="SWQ">60.0</radius>
+              <radius units="nm" sector="NWQ">30.0</radius>
+            </windSpeed>
+          </windContours>
+          <vortexParameters>
+            <x>0.7274</x>
+          </vortexParameters>
+        </cycloneData>
+      </fix>
+      <fix>
+        <validTime>2011-02-02T10:00:00Z</validTime>
+        <latitude units="deg">-17.3667</latitude>
+        <longitude units="deg">147.2333</longitude>
+        <accuracy units="nm">8.0</accuracy>
+        <cycloneData>
+          <category>5</category>
+          <minimumPressure>
+            <pressure units="hPa">930.0</pressure>
+          </minimumPressure>
+          <maximumWind>
+            <speed units="kt">110.0</speed>
+            <averagingPeriod units="s">600.0</averagingPeriod>
+            <radius units="nm">12.333333333333334</radius>
+            <gusts units="kt">155.0</gusts>
+            <gustAvgPeriod units="s">3.0</gustAvgPeriod>
+          </maximumWind>
+          <windContours>
+            <windSpeed units="kt">
+              34.0
+              <radius units="nm" sector="NEQ">160.0</radius>
+              <radius units="nm" sector="SEQ">250.0</radius>
+              <radius units="nm" sector="SWQ">160.0</radius>
+              <radius units="nm" sector="NWQ">120.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              48.0
+              <radius units="nm" sector="NEQ">80.0</radius>
+              <radius units="nm" sector="SEQ">110.0</radius>
+              <radius units="nm" sector="SWQ">120.0</radius>
+              <radius units="nm" sector="NWQ">70.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              64.0
+              <radius units="nm" sector="NEQ">30.0</radius>
+              <radius units="nm" sector="SEQ">40.0</radius>
+              <radius units="nm" sector="SWQ">60.0</radius>
+              <radius units="nm" sector="NWQ">30.0</radius>
+            </windSpeed>
+          </windContours>
+          <vortexParameters>
+            <x>0.7273</x>
+          </vortexParameters>
+        </cycloneData>
+      </fix>
+      <fix>
+        <validTime>2011-02-02T11:00:00Z</validTime>
+        <latitude units="deg">-17.4333</latitude>
+        <longitude units="deg">147.0167</longitude>
+        <accuracy units="nm">8.0</accuracy>
+        <cycloneData>
+          <category>5</category>
+          <minimumPressure>
+            <pressure units="hPa">930.0</pressure>
+          </minimumPressure>
+          <maximumWind>
+            <speed units="kt">110.0</speed>
+            <averagingPeriod units="s">600.0</averagingPeriod>
+            <radius units="nm">12.166666666666666</radius>
+            <gusts units="kt">155.0</gusts>
+            <gustAvgPeriod units="s">3.0</gustAvgPeriod>
+          </maximumWind>
+          <windContours>
+            <windSpeed units="kt">
+              34.0
+              <radius units="nm" sector="NEQ">160.0</radius>
+              <radius units="nm" sector="SEQ">250.0</radius>
+              <radius units="nm" sector="SWQ">160.0</radius>
+              <radius units="nm" sector="NWQ">120.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              48.0
+              <radius units="nm" sector="NEQ">80.0</radius>
+              <radius units="nm" sector="SEQ">110.0</radius>
+              <radius units="nm" sector="SWQ">120.0</radius>
+              <radius units="nm" sector="NWQ">70.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              64.0
+              <radius units="nm" sector="NEQ">30.0</radius>
+              <radius units="nm" sector="SEQ">40.0</radius>
+              <radius units="nm" sector="SWQ">60.0</radius>
+              <radius units="nm" sector="NWQ">30.0</radius>
+            </windSpeed>
+          </windContours>
+          <vortexParameters>
+            <x>0.7273</x>
+          </vortexParameters>
+        </cycloneData>
+      </fix>
+      <fix>
+        <validTime>2011-02-02T12:00:00Z</validTime>
+        <latitude units="deg">-17.5</latitude>
+        <longitude units="deg">146.8</longitude>
+        <accuracy units="nm">8.0</accuracy>
+        <cycloneData>
+          <category>5</category>
+          <minimumPressure>
+            <pressure units="hPa">930.0</pressure>
+          </minimumPressure>
+          <lastClosedIsobar>
+            <pressure units="hPa">1000.0</pressure>
+            <radius units="nm">180.0</radius>
+          </lastClosedIsobar>
+          <maximumWind>
+            <speed units="kt">110.0</speed>
+            <averagingPeriod units="s">600.0</averagingPeriod>
+            <radius units="nm">12.0</radius>
+            <gusts units="kt">155.0</gusts>
+            <gustAvgPeriod units="s">3.0</gustAvgPeriod>
+          </maximumWind>
+          <windContours>
+            <windSpeed units="kt">
+              34.0
+              <radius units="nm" sector="NEQ">180.0</radius>
+              <radius units="nm" sector="SEQ">270.0</radius>
+              <radius units="nm" sector="SWQ">110.0</radius>
+              <radius units="nm" sector="NWQ">100.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              48.0
+              <radius units="nm" sector="NEQ">70.0</radius>
+              <radius units="nm" sector="SEQ">120.0</radius>
+              <radius units="nm" sector="SWQ">110.0</radius>
+              <radius units="nm" sector="NWQ">60.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              64.0
+              <radius units="nm" sector="NEQ">25.0</radius>
+              <radius units="nm" sector="SEQ">40.0</radius>
+              <radius units="nm" sector="SWQ">60.0</radius>
+              <radius units="nm" sector="NWQ">25.0</radius>
+            </windSpeed>
+          </windContours>
+          <vortexParameters>
+            <x>0.7272</x>
+          </vortexParameters>
+        </cycloneData>
+      </fix>
+      <fix>
+        <validTime>2011-02-02T13:00:00Z</validTime>
+        <latitude units="deg">-17.684</latitude>
+        <longitude units="deg">146.492</longitude>
+        <accuracy units="nm">8.0</accuracy>
+        <cycloneData>
+          <category>5</category>
+          <minimumPressure>
+            <pressure units="hPa">930.0</pressure>
+          </minimumPressure>
+          <maximumWind>
+            <speed units="kt">110.0</speed>
+            <averagingPeriod units="s">600.0</averagingPeriod>
+            <radius units="nm">12.0</radius>
+            <gusts units="kt">155.0</gusts>
+            <gustAvgPeriod units="s">3.0</gustAvgPeriod>
+          </maximumWind>
+          <windContours>
+            <windSpeed units="kt">
+              34.0
+              <radius units="nm" sector="NEQ">180.0</radius>
+              <radius units="nm" sector="SEQ">270.0</radius>
+              <radius units="nm" sector="SWQ">110.0</radius>
+              <radius units="nm" sector="NWQ">100.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              48.0
+              <radius units="nm" sector="NEQ">70.0</radius>
+              <radius units="nm" sector="SEQ">120.0</radius>
+              <radius units="nm" sector="SWQ">110.0</radius>
+              <radius units="nm" sector="NWQ">60.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              64.0
+              <radius units="nm" sector="NEQ">25.0</radius>
+              <radius units="nm" sector="SEQ">40.0</radius>
+              <radius units="nm" sector="SWQ">60.0</radius>
+              <radius units="nm" sector="NWQ">25.0</radius>
+            </windSpeed>
+          </windContours>
+          <vortexParameters>
+            <x>0.727</x>
+          </vortexParameters>
+        </cycloneData>
+      </fix>
+      <fix>
+        <validTime>2011-02-02T14:00:00Z</validTime>
+        <latitude units="deg">-17.868</latitude>
+        <longitude units="deg">146.184</longitude>
+        <accuracy units="nm">8.0</accuracy>
+        <cycloneData>
+          <category>5</category>
+          <minimumPressure>
+            <pressure units="hPa">929.0</pressure>
+          </minimumPressure>
+          <maximumWind>
+            <speed units="kt">110.0</speed>
+            <averagingPeriod units="s">600.0</averagingPeriod>
+            <radius units="nm">12.0</radius>
+            <gusts units="kt">155.0</gusts>
+            <gustAvgPeriod units="s">3.0</gustAvgPeriod>
+          </maximumWind>
+          <windContours>
+            <windSpeed units="kt">
+              34.0
+              <radius units="nm" sector="NEQ">180.0</radius>
+              <radius units="nm" sector="SEQ">270.0</radius>
+              <radius units="nm" sector="SWQ">110.0</radius>
+              <radius units="nm" sector="NWQ">100.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              48.0
+              <radius units="nm" sector="NEQ">70.0</radius>
+              <radius units="nm" sector="SEQ">120.0</radius>
+              <radius units="nm" sector="SWQ">110.0</radius>
+              <radius units="nm" sector="NWQ">60.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              64.0
+              <radius units="nm" sector="NEQ">25.0</radius>
+              <radius units="nm" sector="SEQ">40.0</radius>
+              <radius units="nm" sector="SWQ">60.0</radius>
+              <radius units="nm" sector="NWQ">25.0</radius>
+            </windSpeed>
+          </windContours>
+          <vortexParameters>
+            <x>0.7268</x>
+          </vortexParameters>
+        </cycloneData>
+      </fix>
+      <fix>
+        <validTime>2011-02-02T15:00:00Z</validTime>
+        <latitude units="deg">-18.0</latitude>
+        <longitude units="deg">145.9</longitude>
+        <accuracy units="nm">12.0</accuracy>
+        <cycloneData>
+          <category>4</category>
+          <minimumPressure>
+            <pressure units="hPa">944.0</pressure>
+          </minimumPressure>
+          <maximumWind>
+            <speed units="kt">97.5</speed>
+            <averagingPeriod units="s">600.0</averagingPeriod>
+            <radius units="nm">13.5</radius>
+            <gusts units="kt">135.0</gusts>
+            <gustAvgPeriod units="s">3.0</gustAvgPeriod>
+          </maximumWind>
+          <windContours>
+            <windSpeed units="kt">
+              34.0
+              <radius units="nm" sector="NEQ">180.0</radius>
+              <radius units="nm" sector="SEQ">270.0</radius>
+              <radius units="nm" sector="SWQ">110.0</radius>
+              <radius units="nm" sector="NWQ">100.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              48.0
+              <radius units="nm" sector="NEQ">70.0</radius>
+              <radius units="nm" sector="SEQ">120.0</radius>
+              <radius units="nm" sector="SWQ">110.0</radius>
+              <radius units="nm" sector="NWQ">60.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              64.0
+              <radius units="nm" sector="NEQ">25.0</radius>
+              <radius units="nm" sector="SEQ">40.0</radius>
+              <radius units="nm" sector="SWQ">60.0</radius>
+              <radius units="nm" sector="NWQ">25.0</radius>
+            </windSpeed>
+          </windContours>
+          <vortexParameters>
+            <x>0.658</x>
+          </vortexParameters>
+        </cycloneData>
+      </fix>
+      <fix>
+        <validTime>2011-02-02T16:00:00Z</validTime>
+        <latitude units="deg">-18.1667</latitude>
+        <longitude units="deg">145.6</longitude>
+        <accuracy units="nm">13.0</accuracy>
+        <cycloneData>
+          <category>4</category>
+          <minimumPressure>
+            <pressure units="hPa">949.0</pressure>
+          </minimumPressure>
+          <maximumWind>
+            <speed units="kt">93.3333</speed>
+            <averagingPeriod units="s">600.0</averagingPeriod>
+            <radius units="nm">14.0</radius>
+            <gusts units="kt">130.0</gusts>
+            <gustAvgPeriod units="s">3.0</gustAvgPeriod>
+          </maximumWind>
+          <windContours>
+            <windSpeed units="kt">
+              34.0
+              <radius units="nm" sector="NEQ">180.0</radius>
+              <radius units="nm" sector="SEQ">270.0</radius>
+              <radius units="nm" sector="SWQ">110.0</radius>
+              <radius units="nm" sector="NWQ">100.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              48.0
+              <radius units="nm" sector="NEQ">70.0</radius>
+              <radius units="nm" sector="SEQ">120.0</radius>
+              <radius units="nm" sector="SWQ">110.0</radius>
+              <radius units="nm" sector="NWQ">60.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              64.0
+              <radius units="nm" sector="NEQ">25.0</radius>
+              <radius units="nm" sector="SEQ">40.0</radius>
+              <radius units="nm" sector="SWQ">60.0</radius>
+              <radius units="nm" sector="NWQ">25.0</radius>
+            </windSpeed>
+          </windContours>
+          <vortexParameters>
+            <x>0.6349</x>
+          </vortexParameters>
+        </cycloneData>
+      </fix>
+      <fix>
+        <validTime>2011-02-02T17:00:00Z</validTime>
+        <latitude units="deg">-18.3333</latitude>
+        <longitude units="deg">145.3</longitude>
+        <accuracy units="nm">14.0</accuracy>
+        <cycloneData>
+          <category>4</category>
+          <minimumPressure>
+            <pressure units="hPa">953.0</pressure>
+          </minimumPressure>
+          <maximumWind>
+            <speed units="kt">89.1667</speed>
+            <averagingPeriod units="s">600.0</averagingPeriod>
+            <radius units="nm">14.5</radius>
+            <gusts units="kt">125.0</gusts>
+            <gustAvgPeriod units="s">3.0</gustAvgPeriod>
+          </maximumWind>
+          <windContours>
+            <windSpeed units="kt">
+              34.0
+              <radius units="nm" sector="NEQ">180.0</radius>
+              <radius units="nm" sector="SEQ">270.0</radius>
+              <radius units="nm" sector="SWQ">110.0</radius>
+              <radius units="nm" sector="NWQ">100.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              48.0
+              <radius units="nm" sector="NEQ">70.0</radius>
+              <radius units="nm" sector="SEQ">120.0</radius>
+              <radius units="nm" sector="SWQ">110.0</radius>
+              <radius units="nm" sector="NWQ">60.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              64.0
+              <radius units="nm" sector="NEQ">25.0</radius>
+              <radius units="nm" sector="SEQ">40.0</radius>
+              <radius units="nm" sector="SWQ">60.0</radius>
+              <radius units="nm" sector="NWQ">25.0</radius>
+            </windSpeed>
+          </windContours>
+          <vortexParameters>
+            <x>0.6118</x>
+          </vortexParameters>
+        </cycloneData>
+      </fix>
+      <fix>
+        <validTime>2011-02-02T18:00:00Z</validTime>
+        <latitude units="deg">-18.5</latitude>
+        <longitude units="deg">145.0</longitude>
+        <accuracy units="nm">15.0</accuracy>
+        <cycloneData>
+          <category>3</category>
+          <minimumPressure>
+            <pressure units="hPa">958.0</pressure>
+          </minimumPressure>
+          <lastClosedIsobar>
+            <pressure units="hPa">1004.0</pressure>
+            <radius units="nm">270.0</radius>
+          </lastClosedIsobar>
+          <maximumWind>
+            <speed units="kt">85.0</speed>
+            <averagingPeriod units="s">600.0</averagingPeriod>
+            <radius units="nm">15.0</radius>
+            <gusts units="kt">120.0</gusts>
+            <gustAvgPeriod units="s">3.0</gustAvgPeriod>
+          </maximumWind>
+          <windContours>
+            <windSpeed units="kt">
+              34.0
+              <radius units="nm" sector="NEQ">220.0</radius>
+              <radius units="nm" sector="SEQ">150.0</radius>
+              <radius units="nm" sector="SWQ">100.0</radius>
+              <radius units="nm" sector="NWQ">120.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              48.0
+              <radius units="nm" sector="NEQ">80.0</radius>
+              <radius units="nm" sector="SEQ">110.0</radius>
+              <radius units="nm" sector="SWQ">70.0</radius>
+              <radius units="nm" sector="NWQ">60.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              64.0
+              <radius units="nm" sector="NEQ">20.0</radius>
+              <radius units="nm" sector="SEQ">40.0</radius>
+              <radius units="nm" sector="SWQ">20.0</radius>
+              <radius units="nm" sector="NWQ">20.0</radius>
+            </windSpeed>
+          </windContours>
+          <vortexParameters>
+            <x>0.5887</x>
+          </vortexParameters>
+        </cycloneData>
+      </fix>
+      <fix>
+        <validTime>2011-02-02T19:00:00Z</validTime>
+        <latitude units="deg">-18.6333</latitude>
+        <longitude units="deg">144.6833</longitude>
+        <accuracy units="nm">16.0</accuracy>
+        <cycloneData>
+          <category>3</category>
+          <minimumPressure>
+            <pressure units="hPa">962.0</pressure>
+          </minimumPressure>
+          <maximumWind>
+            <speed units="kt">79.1667</speed>
+            <averagingPeriod units="s">600.0</averagingPeriod>
+            <radius units="nm">16.666666666666668</radius>
+            <gusts units="kt">110.0</gusts>
+            <gustAvgPeriod units="s">3.0</gustAvgPeriod>
+          </maximumWind>
+          <windContours>
+            <windSpeed units="kt">
+              34.0
+              <radius units="nm" sector="NEQ">220.0</radius>
+              <radius units="nm" sector="SEQ">150.0</radius>
+              <radius units="nm" sector="SWQ">100.0</radius>
+              <radius units="nm" sector="NWQ">120.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              48.0
+              <radius units="nm" sector="NEQ">80.0</radius>
+              <radius units="nm" sector="SEQ">110.0</radius>
+              <radius units="nm" sector="SWQ">70.0</radius>
+              <radius units="nm" sector="NWQ">60.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              64.0
+              <radius units="nm" sector="NEQ">20.0</radius>
+              <radius units="nm" sector="SEQ">40.0</radius>
+              <radius units="nm" sector="SWQ">20.0</radius>
+              <radius units="nm" sector="NWQ">20.0</radius>
+            </windSpeed>
+          </windContours>
+          <vortexParameters>
+            <x>0.5565</x>
+          </vortexParameters>
+        </cycloneData>
+      </fix>
+      <fix>
+        <validTime>2011-02-02T20:00:00Z</validTime>
+        <latitude units="deg">-18.7667</latitude>
+        <longitude units="deg">144.3667</longitude>
+        <accuracy units="nm">17.0</accuracy>
+        <cycloneData>
+          <category>3</category>
+          <minimumPressure>
+            <pressure units="hPa">967.0</pressure>
+          </minimumPressure>
+          <maximumWind>
+            <speed units="kt">73.3333</speed>
+            <averagingPeriod units="s">600.0</averagingPeriod>
+            <radius units="nm">18.333333333333332</radius>
+            <gusts units="kt">100.0</gusts>
+            <gustAvgPeriod units="s">3.0</gustAvgPeriod>
+          </maximumWind>
+          <windContours>
+            <windSpeed units="kt">
+              34.0
+              <radius units="nm" sector="NEQ">220.0</radius>
+              <radius units="nm" sector="SEQ">150.0</radius>
+              <radius units="nm" sector="SWQ">100.0</radius>
+              <radius units="nm" sector="NWQ">120.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              48.0
+              <radius units="nm" sector="NEQ">80.0</radius>
+              <radius units="nm" sector="SEQ">110.0</radius>
+              <radius units="nm" sector="SWQ">70.0</radius>
+              <radius units="nm" sector="NWQ">60.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              64.0
+              <radius units="nm" sector="NEQ">20.0</radius>
+              <radius units="nm" sector="SEQ">40.0</radius>
+              <radius units="nm" sector="SWQ">20.0</radius>
+              <radius units="nm" sector="NWQ">20.0</radius>
+            </windSpeed>
+          </windContours>
+          <vortexParameters>
+            <x>0.5243</x>
+          </vortexParameters>
+        </cycloneData>
+      </fix>
+      <fix>
+        <validTime>2011-02-02T21:00:00Z</validTime>
+        <latitude units="deg">-18.9</latitude>
+        <longitude units="deg">144.05</longitude>
+        <accuracy units="nm">18.0</accuracy>
+        <cycloneData>
+          <category>3</category>
+          <minimumPressure>
+            <pressure units="hPa">971.0</pressure>
+          </minimumPressure>
+          <maximumWind>
+            <speed units="kt">67.5</speed>
+            <averagingPeriod units="s">600.0</averagingPeriod>
+            <radius units="nm">20.0</radius>
+            <gusts units="kt">95.0</gusts>
+            <gustAvgPeriod units="s">3.0</gustAvgPeriod>
+          </maximumWind>
+          <windContours>
+            <windSpeed units="kt">
+              34.0
+              <radius units="nm" sector="NEQ">220.0</radius>
+              <radius units="nm" sector="SEQ">150.0</radius>
+              <radius units="nm" sector="SWQ">100.0</radius>
+              <radius units="nm" sector="NWQ">120.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              48.0
+              <radius units="nm" sector="NEQ">80.0</radius>
+              <radius units="nm" sector="SEQ">110.0</radius>
+              <radius units="nm" sector="SWQ">70.0</radius>
+              <radius units="nm" sector="NWQ">60.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              64.0
+              <radius units="nm" sector="NEQ">20.0</radius>
+              <radius units="nm" sector="SEQ">40.0</radius>
+              <radius units="nm" sector="SWQ">20.0</radius>
+              <radius units="nm" sector="NWQ">20.0</radius>
+            </windSpeed>
+          </windContours>
+          <vortexParameters>
+            <x>0.4921</x>
+          </vortexParameters>
+        </cycloneData>
+      </fix>
+      <fix>
+        <validTime>2011-02-02T22:00:00Z</validTime>
+        <latitude units="deg">-19.0333</latitude>
+        <longitude units="deg">143.7333</longitude>
+        <accuracy units="nm">18.0</accuracy>
+        <cycloneData>
+          <category>2</category>
+          <minimumPressure>
+            <pressure units="hPa">975.0</pressure>
+          </minimumPressure>
+          <maximumWind>
+            <speed units="kt">61.6667</speed>
+            <averagingPeriod units="s">600.0</averagingPeriod>
+            <radius units="nm">21.666666666666668</radius>
+            <gusts units="kt">85.0</gusts>
+            <gustAvgPeriod units="s">3.0</gustAvgPeriod>
+          </maximumWind>
+          <windContours>
+            <windSpeed units="kt">
+              34.0
+              <radius units="nm" sector="NEQ">220.0</radius>
+              <radius units="nm" sector="SEQ">150.0</radius>
+              <radius units="nm" sector="SWQ">100.0</radius>
+              <radius units="nm" sector="NWQ">120.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              48.0
+              <radius units="nm" sector="NEQ">80.0</radius>
+              <radius units="nm" sector="SEQ">110.0</radius>
+              <radius units="nm" sector="SWQ">70.0</radius>
+              <radius units="nm" sector="NWQ">60.0</radius>
+            </windSpeed>
+          </windContours>
+          <vortexParameters>
+            <x>0.4598</x>
+          </vortexParameters>
+        </cycloneData>
+      </fix>
+      <fix>
+        <validTime>2011-02-02T23:00:00Z</validTime>
+        <latitude units="deg">-19.1667</latitude>
+        <longitude units="deg">143.4167</longitude>
+        <accuracy units="nm">19.0</accuracy>
+        <cycloneData>
+          <category>2</category>
+          <minimumPressure>
+            <pressure units="hPa">980.0</pressure>
+          </minimumPressure>
+          <maximumWind>
+            <speed units="kt">55.8333</speed>
+            <averagingPeriod units="s">600.0</averagingPeriod>
+            <radius units="nm">23.333333333333336</radius>
+            <gusts units="kt">80.0</gusts>
+            <gustAvgPeriod units="s">3.0</gustAvgPeriod>
+          </maximumWind>
+          <windContours>
+            <windSpeed units="kt">
+              34.0
+              <radius units="nm" sector="NEQ">220.0</radius>
+              <radius units="nm" sector="SEQ">150.0</radius>
+              <radius units="nm" sector="SWQ">100.0</radius>
+              <radius units="nm" sector="NWQ">120.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              48.0
+              <radius units="nm" sector="NEQ">80.0</radius>
+              <radius units="nm" sector="SEQ">110.0</radius>
+              <radius units="nm" sector="SWQ">70.0</radius>
+              <radius units="nm" sector="NWQ">60.0</radius>
+            </windSpeed>
+          </windContours>
+          <vortexParameters>
+            <x>0.4276</x>
+          </vortexParameters>
+        </cycloneData>
+      </fix>
+      <fix>
+        <validTime>2011-02-03T00:00:00Z</validTime>
+        <latitude units="deg">-19.3</latitude>
+        <longitude units="deg">143.1</longitude>
+        <accuracy units="nm">20.0</accuracy>
+        <cycloneData>
+          <category>2</category>
+          <minimumPressure>
+            <pressure units="hPa">984.0</pressure>
+          </minimumPressure>
+          <lastClosedIsobar>
+            <pressure units="hPa">1004.0</pressure>
+            <radius units="nm">220.0</radius>
+          </lastClosedIsobar>
+          <maximumWind>
+            <speed units="kt">50.0</speed>
+            <averagingPeriod units="s">600.0</averagingPeriod>
+            <radius units="nm">25.0</radius>
+            <gusts units="kt">70.0</gusts>
+            <gustAvgPeriod units="s">3.0</gustAvgPeriod>
+          </maximumWind>
+          <windContours>
+            <windSpeed units="kt">
+              34.0
+              <radius units="nm" sector="NEQ">220.0</radius>
+              <radius units="nm" sector="SEQ">100.0</radius>
+              <radius units="nm" sector="SWQ">100.0</radius>
+              <radius units="nm" sector="NWQ">100.0</radius>
+            </windSpeed>
+            <windSpeed units="kt">
+              48.0
+              <radius units="nm" sector="NEQ">80.0</radius>
+              <radius units="nm" sector="SEQ">70.0</radius>
+              <radius units="nm" sector="SWQ">30.0</radius>
+              <radius units="nm" sector="NWQ">30.0</radius>
+            </windSpeed>
+          </windContours>
+          <vortexParameters>
+            <x>0.3954</x>
+          </vortexParameters>
+        </cycloneData>
+      </fix>
+      <fix>
+        <validTime>2011-02-03T01:00:00Z</validTime>
+        <latitude units="deg">-19.4167</latitude>
+        <longitude units="deg">142.8333</longitude>
+        <accuracy units="nm">19.0</accuracy>
+        <cycloneData>
+          <category>2</category>
+          <minimumPressure>
+            <pressure units="hPa">986.0</pressure>
+          </minimumPressure>
+          <maximumWind>
+            <speed units="kt">47.5</speed>
+            <averagingPeriod units="s">600.0</averagingPeriod>
+            <radius units="nm">25.0</radius>
+            <gusts units="kt">70.0</gusts>
+            <gustAvgPeriod units="s">3.0</gustAvgPeriod>
+          </maximumWind>
+          <windContours>
+            <windSpeed units="kt">
+              34.0
+              <radius units="nm" sector="NEQ">220.0</radius>
+              <radius units="nm" sector="SEQ">100.0</radius>
+              <radius units="nm" sector="SWQ">100.0</radius>
+              <radius units="nm" sector="NWQ">100.0</radius>
+            </windSpeed>
+          </windContours>
+          <vortexParameters>
+            <x>0.3815</x>
+          </vortexParameters>
+        </cycloneData>
+      </fix>
+      <fix>
+        <validTime>2011-02-03T02:00:00Z</validTime>
+        <latitude units="deg">-19.5333</latitude>
+        <longitude units="deg">142.5667</longitude>
+        <accuracy units="nm">18.0</accuracy>
+        <cycloneData>
+          <category>1</category>
+          <minimumPressure>
+            <pressure units="hPa">987.0</pressure>
+          </minimumPressure>
+          <maximumWind>
+            <speed units="kt">45.0</speed>
+            <averagingPeriod units="s">600.0</averagingPeriod>
+            <radius units="nm">25.0</radius>
+            <gusts units="kt">65.0</gusts>
+            <gustAvgPeriod units="s">3.0</gustAvgPeriod>
+          </maximumWind>
+          <windContours>
+            <windSpeed units="kt">
+              34.0
+              <radius units="nm" sector="NEQ">220.0</radius>
+              <radius units="nm" sector="SEQ">100.0</radius>
+              <radius units="nm" sector="SWQ">100.0</radius>
+              <radius units="nm" sector="NWQ">100.0</radius>
+            </windSpeed>
+          </windContours>
+          <vortexParameters>
+            <x>0.3677</x>
+          </vortexParameters>
+        </cycloneData>
+      </fix>
+      <fix>
+        <validTime>2011-02-03T03:00:00Z</validTime>
+        <latitude units="deg">-19.65</latitude>
+        <longitude units="deg">142.3</longitude>
+        <accuracy units="nm">18.0</accuracy>
+        <cycloneData>
+          <category>1</category>
+          <minimumPressure>
+            <pressure units="hPa">989.0</pressure>
+          </minimumPressure>
+          <maximumWind>
+            <speed units="kt">42.5</speed>
+            <averagingPeriod units="s">600.0</averagingPeriod>
+            <radius units="nm">25.0</radius>
+            <gusts units="kt">60.0</gusts>
+            <gustAvgPeriod units="s">3.0</gustAvgPeriod>
+          </maximumWind>
+          <windContours>
+            <windSpeed units="kt">
+              34.0
+              <radius units="nm" sector="NEQ">220.0</radius>
+              <radius units="nm" sector="SEQ">100.0</radius>
+              <radius units="nm" sector="SWQ">100.0</radius>
+              <radius units="nm" sector="NWQ">100.0</radius>
+            </windSpeed>
+          </windContours>
+          <vortexParameters>
+            <x>0.3538</x>
+          </vortexParameters>
+        </cycloneData>
+      </fix>
+      <fix>
+        <validTime>2011-02-03T04:00:00Z</validTime>
+        <latitude units="deg">-19.7667</latitude>
+        <longitude units="deg">142.0333</longitude>
+        <accuracy units="nm">17.0</accuracy>
+        <cycloneData>
+          <category>1</category>
+          <minimumPressure>
+            <pressure units="hPa">991.0</pressure>
+          </minimumPressure>
+          <maximumWind>
+            <speed units="kt">40.0</speed>
+            <averagingPeriod units="s">600.0</averagingPeriod>
+            <radius units="nm">25.0</radius>
+            <gusts units="kt">55.0</gusts>
+            <gustAvgPeriod units="s">3.0</gustAvgPeriod>
+          </maximumWind>
+          <windContours>
+            <windSpeed units="kt">
+              34.0
+              <radius units="nm" sector="NEQ">220.0</radius>
+              <radius units="nm" sector="SEQ">100.0</radius>
+              <radius units="nm" sector="SWQ">100.0</radius>
+              <radius units="nm" sector="NWQ">100.0</radius>
+            </windSpeed>
+          </windContours>
+          <vortexParameters>
+            <x>0.3399</x>
+          </vortexParameters>
+        </cycloneData>
+      </fix>
+      <fix>
+        <validTime>2011-02-03T05:00:00Z</validTime>
+        <latitude units="deg">-19.8833</latitude>
+        <longitude units="deg">141.7667</longitude>
+        <accuracy units="nm">16.0</accuracy>
+        <cycloneData>
+          <category>1</category>
+          <minimumPressure>
+            <pressure units="hPa">992.0</pressure>
+          </minimumPressure>
+          <maximumWind>
+            <speed units="kt">37.5</speed>
+            <averagingPeriod units="s">600.0</averagingPeriod>
+            <radius units="nm">25.0</radius>
+            <gusts units="kt">55.0</gusts>
+            <gustAvgPeriod units="s">3.0</gustAvgPeriod>
+          </maximumWind>
+          <windContours>
+            <windSpeed units="kt">
+              34.0
+              <radius units="nm" sector="NEQ">220.0</radius>
+              <radius units="nm" sector="SEQ">100.0</radius>
+              <radius units="nm" sector="SWQ">100.0</radius>
+              <radius units="nm" sector="NWQ">100.0</radius>
+            </windSpeed>
+          </windContours>
+          <vortexParameters>
+            <x>0.3261</x>
+          </vortexParameters>
+        </cycloneData>
+      </fix>
+      <fix>
+        <validTime>2011-02-03T06:00:00Z</validTime>
+        <latitude units="deg">-20.0</latitude>
+        <longitude units="deg">141.5</longitude>
+        <accuracy units="nm">15.0</accuracy>
+        <cycloneData>
+          <category>1</category>
+          <minimumPressure>
+            <pressure units="hPa">994.0</pressure>
+          </minimumPressure>
+          <lastClosedIsobar>
+            <pressure units="hPa">1000.0</pressure>
+            <radius units="nm">200.0</radius>
+          </lastClosedIsobar>
+          <maximumWind>
+            <speed units="kt">35.0</speed>
+            <averagingPeriod units="s">600.0</averagingPeriod>
+            <radius units="nm">25.0</radius>
+            <gusts units="kt">50.0</gusts>
+            <gustAvgPeriod units="s">3.0</gustAvgPeriod>
+          </maximumWind>
+          <windContours>
+            <windSpeed units="kt">
+              34.0
+              <radius units="nm" sector="NEQ">40.0</radius>
+              <radius units="nm" sector="SEQ">50.0</radius>
+              <radius units="nm" sector="SWQ">50.0</radius>
+              <radius units="nm" sector="NWQ">40.0</radius>
+            </windSpeed>
+          </windContours>
+          <vortexParameters>
+            <x>0.3122</x>
+          </vortexParameters>
+        </cycloneData>
+      </fix>
+      <fix>
+        <validTime>2011-02-03T07:00:00Z</validTime>
+        <latitude units="deg">-20.1</latitude>
+        <longitude units="deg">141.35</longitude>
+        <accuracy units="nm">16.0</accuracy>
+        <cycloneData>
+          <category>1</category>
+          <minimumPressure>
+            <pressure units="hPa">994.0</pressure>
+          </minimumPressure>
+          <maximumWind>
+            <speed units="kt">34.1667</speed>
+            <averagingPeriod units="s">600.0</averagingPeriod>
+            <radius units="nm">25.0</radius>
+            <gusts units="kt">50.0</gusts>
+            <gustAvgPeriod units="s">3.0</gustAvgPeriod>
+          </maximumWind>
+          <windContours>
+            <windSpeed units="kt">
+              34.0
+              <radius units="nm" sector="NEQ">40.0</radius>
+              <radius units="nm" sector="SEQ">50.0</radius>
+              <radius units="nm" sector="SWQ">50.0</radius>
+              <radius units="nm" sector="NWQ">40.0</radius>
+            </windSpeed>
+          </windContours>
+          <vortexParameters>
+            <x>0.3075</x>
+          </vortexParameters>
+        </cycloneData>
+      </fix>
+      <fix>
+        <validTime>2011-02-03T08:00:00Z</validTime>
+        <latitude units="deg">-20.2</latitude>
+        <longitude units="deg">141.2</longitude>
+        <accuracy units="nm">17.0</accuracy>
+        <cycloneData>
+          <minimumPressure>
+            <pressure units="hPa">995.0</pressure>
+          </minimumPressure>
+          <maximumWind>
+            <speed units="kt">33.3333</speed>
+            <averagingPeriod units="s">600.0</averagingPeriod>
+            <radius units="nm">25.0</radius>
+            <gusts units="kt">48.3333</gusts>
+            <gustAvgPeriod units="s">3.0</gustAvgPeriod>
+          </maximumWind>
+          <vortexParameters>
+            <x>0.3028</x>
+          </vortexParameters>
+        </cycloneData>
+      </fix>
+      <fix>
+        <validTime>2011-02-03T09:00:00Z</validTime>
+        <latitude units="deg">-20.3</latitude>
+        <longitude units="deg">141.05</longitude>
+        <accuracy units="nm">18.0</accuracy>
+        <cycloneData>
+          <minimumPressure>
+            <pressure units="hPa">995.0</pressure>
+          </minimumPressure>
+          <maximumWind>
+            <speed units="kt">32.5</speed>
+            <averagingPeriod units="s">600.0</averagingPeriod>
+            <radius units="nm">25.0</radius>
+            <gusts units="kt">47.5</gusts>
+            <gustAvgPeriod units="s">3.0</gustAvgPeriod>
+          </maximumWind>
+          <vortexParameters>
+            <x>0.2981</x>
+          </vortexParameters>
+        </cycloneData>
+      </fix>
+      <fix>
+        <validTime>2011-02-03T10:00:00Z</validTime>
+        <latitude units="deg">-20.4</latitude>
+        <longitude units="deg">140.9</longitude>
+        <accuracy units="nm">18.0</accuracy>
+        <cycloneData>
+          <minimumPressure>
+            <pressure units="hPa">995.0</pressure>
+          </minimumPressure>
+          <maximumWind>
+            <speed units="kt">31.6667</speed>
+            <averagingPeriod units="s">600.0</averagingPeriod>
+            <radius units="nm">25.0</radius>
+            <gusts units="kt">46.6667</gusts>
+            <gustAvgPeriod units="s">3.0</gustAvgPeriod>
+          </maximumWind>
+          <vortexParameters>
+            <x>0.2935</x>
+          </vortexParameters>
+        </cycloneData>
+      </fix>
+      <fix>
+        <validTime>2011-02-03T11:00:00Z</validTime>
+        <latitude units="deg">-20.5</latitude>
+        <longitude units="deg">140.75</longitude>
+        <accuracy units="nm">19.0</accuracy>
+        <cycloneData>
+          <minimumPressure>
+            <pressure units="hPa">996.0</pressure>
+          </minimumPressure>
+          <maximumWind>
+            <speed units="kt">30.8333</speed>
+            <averagingPeriod units="s">600.0</averagingPeriod>
+            <radius units="nm">25.0</radius>
+            <gusts units="kt">45.8333</gusts>
+            <gustAvgPeriod units="s">3.0</gustAvgPeriod>
+          </maximumWind>
+          <vortexParameters>
+            <x>0.2888</x>
+          </vortexParameters>
+        </cycloneData>
+      </fix>
+      <fix>
+        <validTime>2011-02-03T12:00:00Z</validTime>
+        <latitude units="deg">-20.6</latitude>
+        <longitude units="deg">140.6</longitude>
+        <accuracy units="nm">20.0</accuracy>
+        <cycloneData>
+          <minimumPressure>
+            <pressure units="hPa">996.0</pressure>
+          </minimumPressure>
+          <lastClosedIsobar>
+            <pressure units="hPa">1000.0</pressure>
+          </lastClosedIsobar>
+          <maximumWind>
+            <speed units="kt">30.0</speed>
+            <averagingPeriod units="s">600.0</averagingPeriod>
+            <radius units="nm">25.0</radius>
+            <gusts units="kt">45.0</gusts>
+            <gustAvgPeriod units="s">3.0</gustAvgPeriod>
+          </maximumWind>
+          <vortexParameters>
+            <x>0.2841</x>
+          </vortexParameters>
+        </cycloneData>
+      </fix>
+    </disturbance>
+  </data>
+</cxml>
+
