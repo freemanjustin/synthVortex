@@ -12,13 +12,14 @@ CFLAGS=	-O3 -g -Wall `/usr/bin/xml2-config --cflags`
 
 INC=	-I./include
 
-LFLAGS= -lnetcdf `/usr/bin/xml2-config --libs`
+LFLAGS= -lnetcdf `/usr/bin/xml2-config --libs` -lm
 
 COBJ=	$(CSRC)main.o \
 	$(CSRC)jutil.o \
 	$(CSRC)readXML.o \
-	$(CSRC)vortex.o
-	
+	$(CSRC)vortex.o \
+	$(CSRC)mrvsmooth.o
+
 
 OBJ=	$(COBJ) 
 
