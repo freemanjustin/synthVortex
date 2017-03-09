@@ -23,12 +23,17 @@ double getmin(int n, double *r){
   return t;
 }
 /***********************************************
- *                  / 
- * integrate G(x) = | F(x) dx
- *                  /
+ *                               / 
+ * cumulatively integrate G(x) = | F(x) dx
+ *                              /
  ***********************************************/
 void trapintegrate(int N, double *F, double *x, double initial, double *G){
+  int i;
 
+  G[0]=initial;
+  for(i=1;i<N;i++){
+    G[i] = G[i-1] + 0.5*(F[i]+F[i-1])*(x[i]-x[i-1]); 
+  }
 
 }
 
