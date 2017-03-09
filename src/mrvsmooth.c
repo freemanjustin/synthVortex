@@ -11,6 +11,34 @@ double getmax(int n, double *r){
   }
   return t;
 }
+double getmin(int n, double *r){
+  double t=1e15;
+  int ix;
+
+  for(ix=0;ix<n;ix++){
+    if(r[ix] < t){
+      t=r[ix];
+    }
+  }
+  return t;
+}
+/***********************************************
+ *                  / 
+ * integrate G(x) = | F(x) dx
+ *                  /
+ ***********************************************/
+void trapintegrate(int N, double *F, double *x, double initial, double *G){
+
+
+}
+/***********************************************
+ *
+ * interpolate from F(xm) to G(xn)
+ *
+ ***********************************************/
+void interpolate(int n, double *xn, int m, double *xm, double *F, double *G){
+
+}
 /******************************************************************************/
 
 double* wt(int n, double *r, double ra, double Lblend, int blendorder){
@@ -35,7 +63,7 @@ double* wt(int n, double *r, double ra, double Lblend, int blendorder){
 }
 
 
-  double* vor(int n, double *r, double a[14], int blendorder){
+double* vor(int n, double *r, double a[14], int blendorder){
   int ix;
   double *vor;
   double *Z4,*Z5;
@@ -74,7 +102,7 @@ double* wt(int n, double *r, double ra, double Lblend, int blendorder){
     Z4[ix] = Z3*srat*pow((r[ix]/r3),(-1.0-alpha));
   }
 
-  if(Zamp == 0.0){
+  if(Zamp*Zamp < 1e-10){
     for(ix=0;ix<n;ix++){
       Z5[ix] = 0.0;
     }
@@ -106,4 +134,93 @@ double* wt(int n, double *r, double ra, double Lblend, int blendorder){
   free(w4);
   
   return vor;
+}
+
+double* mrvs_v(int n, double *r, double *a, int blendorder){
+  double *zeta;//vorticity
+  int ix;
+  double *v1,*v2;
+  double *rr;//finer 1d grid for r for integration
+  double m=10;//resolution of integration
+  double minr,maxr,dr;
+
+  /*--------------------------------*/
+  minr=getmin(n,r);
+  maxr=getmax(n,r);
+  dr = (maxr-minr)/(m*n-1);//-1 so last rr = maxr
+  
+  rr = malloc(m*n*sizeof(double));
+  for(ix=0;ix<n*m;ix++){
+    rr[ix]=minr+ix*dr;
+  }
+
+  
+  zeta = vor(n*m,rr,a,blendorder);
+  for(ix=0;ix<n*m;ix++){
+    zeta[ix] = rr[ix]*zeta[ix];
+  }
+  /*--------------------------------*/
+  
+  v2 = malloc(m*n*sizeof(double));
+  v1 = malloc(  n*sizeof(double));//output to original grid size
+
+  trapintegrate(n*m, zeta, rr, 0.0, &v2[0]);
+  for(ix=0;ix<n*m;ix++){
+    v2[ix] = v2[ix]/rr[ix];
+  }
+  interpolate(n,r, n*m,rr, v2, &v1[0]);
+  
+  free(v2);
+  free(zeta);
+  free(rr);
+
+  return v1;
+}
+
+double* mrvs_p(int n, double *r, double *a, double pc, double f, int blendorder){
+  double rho=1.15;//maybe do the pRT thing here in future
+  double *zeta;//vorticity
+  int ix;
+  double *p1,*v2;
+  double *rr;//finer 1d grid for r for integration
+  double m=10;//resolution of integration
+  double minr,maxr,dr;
+  
+  /*--------------------------------*/
+  minr=getmin(n,r);
+  maxr=getmax(n,r);
+  dr = (maxr-minr)/(m*n-1);//-1 so last rr = maxr
+  
+  rr = malloc(m*n*sizeof(double));
+  for(ix=0;ix<n*m;ix++){
+    rr[ix]=minr+ix*dr;
+  }
+
+  
+  zeta = vor(n*m,rr,a,blendorder);
+  for(ix=0;ix<n*m;ix++){
+    zeta[ix] = rr[ix]*zeta[ix];
+  }
+  /*--------------------------------*/
+
+  v2 = malloc(m*n*sizeof(double));
+  p1 = malloc(  n*sizeof(double));//output to original grid size
+
+  trapintegrate(n*m, zeta, rr, 0.0, &v2[0]);
+  for(ix=0;ix<n*m;ix++){
+    v2[ix] = v2[ix]/rr[ix];//finishes integral for velocity from vorticity
+    v2[ix] = (v2[ix]*v2[ix]/rr[ix] +f*v2[ix])*rho;//sets up next integral for pressure
+  }
+
+  trapintegrate(n*m, v2, rr, 0.0, &p1[0]);
+  interpolate(n,r, n*m,rr, v2, &p1[0]);
+  for(ix=0;ix<n*m;ix++){
+    p1[ix] += pc;
+  }
+
+  free(v2);
+  free(zeta);
+  free(rr);
+
+  return p1;
 }
