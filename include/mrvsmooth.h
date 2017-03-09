@@ -3,6 +3,6 @@
 #include <string.h>
 #include <math.h>
 
-float getmax(int n, float *r);
-float* wt(int n, float *r, float ra, float Lblend, int blendorder);
-float* vor(int n, float *r, float a[14], int blendorder);
+double getmax(int n, double *r);
+double* wt(int n, double *r, double ra, double Lblend, int blendorder);
+double* vor(int n, double *r, double a[14], int blendorder);

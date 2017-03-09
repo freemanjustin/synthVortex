@@ -1,7 +1,7 @@
 #include "mrvsmooth.h"
 
-float getmax(int n, float *r){
-  float t=-1e15;
+double getmax(int n, double *r){
+  double t=-1e15;
   int ix;
 
   for(ix=0;ix<n;ix++){
@@ -13,12 +13,12 @@ float getmax(int n, float *r){
 }
 /******************************************************************************/
 
-float* wt(int n, float *r, float ra, float Lblend, int blendorder){
+double* wt(int n, double *r, double ra, double Lblend, int blendorder){
   int ix;
-  float *w;
-  float rs;
+  double *w;
+  double rs;
   
-  w=malloc(n*sizeof(float));
+  w=malloc(n*sizeof(double));
   for(ix=0;ix<n;ix++){
     rs = (r[ix]-ra)/Lblend; 
     if (blendorder == 5){
@@ -35,28 +35,28 @@ float* wt(int n, float *r, float ra, float Lblend, int blendorder){
 }
 
 
-  float* vor(int n, float *r, float a[14], int blendorder){
+  double* vor(int n, double *r, double a[14], int blendorder){
   int ix;
-  float *vor;
-  float *Z4,*Z5;
-  float *w1,*w2,*w3,*w4;
+  double *vor;
+  double *Z4,*Z5;
+  double *w1,*w2,*w3,*w4;
 
-  float Z1      = a[0];
-  float r1      = a[1];
-  float Z2      = a[2];
-  float r2      = a[3];
-  float Z3      = a[4];
-  float r3      = a[5];
-  float srat    = a[6];
-  float alpha   = a[7];
-  float Lblend1 = a[8];
-  float Lblend2 = a[9];
-  float Lblend3 = a[10];
-  float theta   = a[11];
-  float Zamp    = a[12];
-  float Zlam    = a[13];
-  float Lblend4;
-  float r4;
+  double Z1      = a[0];
+  double r1      = a[1];
+  double Z2      = a[2];
+  double r2      = a[3];
+  double Z3      = a[4];
+  double r3      = a[5];
+  double srat    = a[6];
+  double alpha   = a[7];
+  double Lblend1 = a[8];
+  double Lblend2 = a[9];
+  double Lblend3 = a[10];
+  double theta   = a[11];
+  double Zamp    = a[12];
+  double Zlam    = a[13];
+  double Lblend4;
+  double r4;
   
   if(isnan(Z2)){
     Z2 = Z1;
@@ -67,8 +67,8 @@ float* wt(int n, float *r, float ra, float Lblend, int blendorder){
     r3 = r2;
   }
   
-  Z4 = malloc(n*sizeof(float));
-  Z5 = malloc(n*sizeof(float));
+  Z4 = malloc(n*sizeof(double));
+  Z5 = malloc(n*sizeof(double));
 
   for(ix=0;ix<n;ix++){
     Z4[ix] = Z3*srat*pow((r[ix]/r3),(-1.0-alpha));
@@ -92,7 +92,7 @@ float* wt(int n, float *r, float ra, float Lblend, int blendorder){
   w3 = wt(n,r,r3,Lblend3,blendorder);
   w4 = wt(n,r,r4,Lblend4,blendorder);
 
-  vor = malloc(n*sizeof(float));
+  vor = malloc(n*sizeof(double));
 
   for(ix=0;ix<n;ix++){
     vor[ix] = w1[ix]*Z1 + (w2[ix] - w1[ix])*Z2 + (w3[ix] - w2[ix])*Z3 + (1.0 - w3[ix])*Z4[ix] + w4[ix]*Z5[ix];
