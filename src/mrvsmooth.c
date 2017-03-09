@@ -31,12 +31,31 @@ void trapintegrate(int N, double *F, double *x, double initial, double *G){
 
 
 }
+
+/* simple linear interpolation */
+double lininterp(int m, double *xm, double *F, double x){
+  int i=0;
+
+  if(x<xm[0] || x > xm[m-1]){
+    printf("input x out of bounds of input array x=%f (%f - %f)\n",x,xm[0],xm[m-1]);
+    exit(EXIT_FAILURE);
+  }
+  while(x > xm[i] && i < m){
+    i++;
+  }
+  return 0.5*(F[i]-F[i-1]);
+}
 /***********************************************
  *
  * interpolate from F(xm) to G(xn)
  *
  ***********************************************/
 void interpolate(int n, double *xn, int m, double *xm, double *F, double *G){
+  int i;
+
+  for(i=0;i<n;i++){
+    G[i]=lininterp(m,xm,F,xn[i]);
+  }
 
 }
 /******************************************************************************/
