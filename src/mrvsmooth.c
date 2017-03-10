@@ -1,4 +1,8 @@
 #include "mrvsmooth.h"
+#include "vortex.h"
+
+#define RTOL 1e-8
+#define M 10000
 
 double getmax(int n, double *r){
   double t=-1e15;
@@ -122,7 +126,7 @@ double* vor(int n, double *r, double a[14], int blendorder){
   double Lblend1 = a[8];
   double Lblend2 = a[9];
   double Lblend3 = a[10];
-  double theta   = a[11];
+  //double theta   = a[11];
   double Zamp    = a[12];
   double Zlam    = a[13];
   double Lblend4;
@@ -141,7 +145,11 @@ double* vor(int n, double *r, double a[14], int blendorder){
   Z5 = malloc(n*sizeof(double));
 
   for(ix=0;ix<n;ix++){
-    Z4[ix] = Z3*srat*pow((r[ix]/r3),(-1.0-alpha));
+    if(r[ix] > RTOL){
+      Z4[ix] = Z3*srat*pow((r[ix]/r3),(-1.0-alpha));
+    }else{
+      Z4[ix] = 0.0;
+    }
   }
 
   if(Zamp*Zamp < 1e-10){
@@ -177,6 +185,103 @@ double* vor(int n, double *r, double a[14], int blendorder){
   
   return vor;
 }
+/*****************************************
+* minr (km) 
+* maxr (km)
+* grid_radius (km)
+******************************************/
+void mrvs_v_grid(int nx, int ny, double minr, double maxr, double *a, double *grid_radius, double *v){
+  double *zeta;//vorticity
+  int ix,i;
+  double *v2;//velocity on 1D radius
+  double *rr;//finer 1d grid for r for integration
+  //double M=5000;//resolution of radial integration
+  double dr,r;
+  int blendorder=9;
+
+  /*--------------------------------*/
+  dr = (maxr-minr)/(M-1);//-1 so last rr = maxr
+  
+  rr = malloc(M*sizeof(double));
+  for(ix=0;ix<M;ix++){
+    rr[ix]=1000.0*(minr+ix*dr);
+  }
+
+  zeta = vor(M,rr,a,blendorder);
+  for(ix=0;ix<M;ix++){
+    zeta[ix] = rr[ix]*zeta[ix];
+  }
+  /*--------------------------------*/  
+  v2 = malloc(M*sizeof(double));
+  trapintegrate(M, zeta, rr, 0.0, &v2[0]);
+  for(ix=0;ix<M;ix++){
+    if(rr[ix] > RTOL){
+      v2[ix] = v2[ix]/rr[ix];
+    }else{
+      v2[ix] = 0.0;
+    }
+  }
+  /*---------------------------------------------*/
+  for(i=0;i<nx*ny;i++){
+    r=grid_radius[i]*1000.0;
+    v[i]=lininterp(M,rr,v2,r);
+  }
+  free(v2);
+  free(rr);
+}
+/*****************************************
+* minr (km) 
+* maxr (km)
+* grid_radius (km)
+* pc (mb)
+******************************************/
+void mrvs_p_grid(int nx, int ny, double minr, double maxr, double *a, double pc, double f, double *grid_radius, double *p){
+  double rho=1.15;//maybe do the pRT thing here in future
+  double *zeta;//vorticity
+  int ix,i;
+  double *v2;//velocity on 1D radius
+  double *p2;//pressure on 1D radius
+  double *rr;//finer 1d grid for r for integration
+  //double M=5000;//resolution of radial integration
+  double dr,r;
+  int blendorder=9;
+
+  /*--------------------------------*/
+  dr = (maxr-minr)/(M-1);//-1 so last rr = maxr
+  
+  rr = malloc(M*sizeof(double));
+  for(ix=0;ix<M;ix++){
+    rr[ix]=1000.0*(minr+ix*dr); //convert km to m
+  }
+
+  zeta = vor(M,rr,a,blendorder);
+  for(ix=0;ix<M;ix++){
+    zeta[ix] = rr[ix]*zeta[ix];
+  }
+  /*--------------------------------*/  
+  v2 = malloc(M*sizeof(double));
+  p2 = malloc(M*sizeof(double));
+  trapintegrate(M, zeta, rr, 0.0, &v2[0]);
+  for(ix=0;ix<M;ix++){
+    if(rr[ix] > RTOL){
+      v2[ix] = v2[ix]/rr[ix];//finishes integral for velocity from vorticity
+      v2[ix] = (v2[ix]*v2[ix]/rr[ix] +f*v2[ix])*rho;//sets up next integral for pressure
+    }else{
+      v2[ix]=0.0;
+    }
+  }
+
+  trapintegrate(M, v2, rr, 0.0, &p2[0]);
+  /*---------------------------------------------*/
+  for(i=0;i<nx*ny;i++){
+    r=grid_radius[i]*1000.0;
+    p[i]=lininterp(M,rr,p2,r)*0.01 + pc;
+  }
+
+  free(v2);
+  free(p2);
+  free(rr);
+}
 
 double* mrvs_v(int n, double *r, double *a, int blendorder){
   double *zeta;//vorticity
@@ -208,7 +313,11 @@ double* mrvs_v(int n, double *r, double *a, int blendorder){
 
   trapintegrate(n*m, zeta, rr, 0.0, &v2[0]);
   for(ix=0;ix<n*m;ix++){
-    v2[ix] = v2[ix]/rr[ix];
+    if(rr[ix] > RTOL){
+      v2[ix] = v2[ix]/rr[ix];
+    }else{
+      v2[ix] = 0.0;
+    }
   }
   interpolate(n,r, n*m,rr, v2, &v1[0]);
   
@@ -251,8 +360,12 @@ double* mrvs_p(int n, double *r, double *a, double pc, double f, int blendorder)
 
   trapintegrate(n*m, zeta, rr, 0.0, &v2[0]);
   for(ix=0;ix<n*m;ix++){
-    v2[ix] = v2[ix]/rr[ix];//finishes integral for velocity from vorticity
-    v2[ix] = (v2[ix]*v2[ix]/rr[ix] +f*v2[ix])*rho;//sets up next integral for pressure
+    if(rr[ix] > RTOL){
+      v2[ix] = v2[ix]/rr[ix];//finishes integral for velocity from vorticity
+      v2[ix] = (v2[ix]*v2[ix]/rr[ix] +f*v2[ix])*rho;//sets up next integral for pressure
+    }else{
+      v2[ix]=0.0;
+    }
   }
 
   trapintegrate(n*m, v2, rr, 0.0, &p2[0]);
@@ -270,7 +383,7 @@ double* mrvs_p(int n, double *r, double *a, double pc, double f, int blendorder)
 }
 
 int testfn(){
-  int    N=400;// km
+  int    N=600;// km
   int blendorder=9;
   double f0 = 4.39e-5;// Coriolis
   double data[11][11] = {{-13.5, 160.5,  971, 1006, 407, 231.5, 102,    56,    41, 36,    0},
@@ -284,14 +397,15 @@ int testfn(){
                          {-17.5, 146.8,  930, 1002, 333, 305.5, 166.75, 69.25, 22, 56.6, 48},
                          {-17.96,146.03, 929, 1002, 333, 291.5, 152.75, 55.5,  22, 56.6, 50.5},
                          {-18.5, 145,	 958, 1006, 500, 273,   148.25, 46.25, 28, 43.7, 54}};  // yasi stats
-  double nm=0.5144;// kt to m/s
-  double vv[3]={34*nm,50*nm,63*nm};
+  //double nm=0.5144;// kt to m/s
+  //double vv[3]={34*nm,50*nm,63*nm};
   double alps[11]={0.45, 0.45, 0.45, 0.5,
                0.5,  0.45, 0.45, 0.45,
                0.45, 0.45, 0.45};
   double nt=11;// number of fixes
   int i,j;
-  double pe,rr[4],rm,vm,hrs,b,alp,Lb,zm,pc;
+  //double pe,rr[4],hrs;
+  double rm,vm,alp,Lb,zm,pc;
   double r[N]; // radial grid
   double *vr,*pr;
   double ar[14];
@@ -302,13 +416,13 @@ int testfn(){
   
   for(i=0;i<nt;i++){
     pc = data[i][2]*1e2;
-    pe = data[i][3]*1e2;
-    for(j=5;j<9;j++){
-      rr[j-5] = data[i][j]*1e3;
-    }
+    //pe = data[i][3]*1e2;
+    //for(j=5;j<9;j++){
+    //  rr[j-5] = data[i][j]*1e3;
+    //}
     rm = data[i][8]*1e3;
     vm = data[i][9];
-    hrs = data[i][10];
+    //hrs = data[i][10];
         
     //b = bs[i];
     alp = alps[i];
@@ -341,5 +455,169 @@ int testfn(){
     free(vr);
     free(pr);
   }
+  return 0;
+}
+
+int test_grid_out(){
+  FILE *fp;
+  double slon= 290.0,  elon=310.0;
+  double slat=-3.0, elat=15.0;
+  double dlat=0.05, dlon=0.05;
+  int nx,ny;
+  int i,j;
+  double *glon,*glat;  //grid lon/lat
+  double *ang, *radius;// radians, km
+  double *p, *v;//pressure and Holland velocity
+  double *vx,*vy;
+  double *tau_x, *tau_y;
+  double *rv;//Rankine velocity
+  double *rp;//Rankine pressure
+  double alpha=0.45; //Rankine parameter
+  double lat1,lon1;
+  double Rm=8.0875793991;//radius of vmax (km)
+  double Vm=50.903348087;//vmax (m/s)
+  double rho=1.15;//density of air (kg/m^3)
+  double pc,pn; //central and outer pressures (mb)
+  double cor;//coriolis force;
+  double ar[14],Lb=5e3,Zm,rm_m;
+  double f0 = 4.39e-5;// Coriolis
+
+  lat1=10.0;//location of current storm
+  lon1=300.0;
+  
+  pc=950.0; //central pressure
+  pn=1004.0;//outer pressure
+
+  rm_m=Rm*1000.0;
+    Zm = 2.1*Vm/rm_m;
+    ar[0]=Zm;
+    ar[1]=rm_m;
+    ar[2]=Zm;
+    ar[3]=rm_m;
+    ar[4]=Zm;
+    ar[5]=rm_m;
+    ar[6]=0.5*(1-alpha);
+    ar[7]=alpha;
+    ar[8]=Lb;
+    ar[9]=Lb;
+    ar[10]=Lb;
+    ar[11]=300.0;
+    ar[12]=0.0;
+    ar[13]=0.0;
+
+  nx=(int)((elon-slon)/dlon);
+  ny=(int)((elat-slat)/dlat);
+
+  dlon = (elon-slon)/nx; //recalculate now
+  dlat = (elat-slat)/ny; //recalculate now
+
+  glon=malloc(nx*sizeof(double));MCK(glon);
+  glat=malloc(ny*sizeof(double));MCK(glat);
+  
+  ang   =malloc(nx*ny*sizeof(double));MCK(ang);
+  radius=malloc(nx*ny*sizeof(double));MCK(radius);
+  p     =malloc(nx*ny*sizeof(double));MCK(p);
+  v     =malloc(nx*ny*sizeof(double));MCK(v);
+  vx    =malloc(nx*ny*sizeof(double));MCK(vx);
+  vy    =malloc(nx*ny*sizeof(double));MCK(vy);
+  tau_x =malloc(nx*ny*sizeof(double));MCK(tau_x);
+  tau_y =malloc(nx*ny*sizeof(double));MCK(tau_y);
+  rv    =malloc(nx*ny*sizeof(double));MCK(rv);
+  rp    =malloc(nx*ny*sizeof(double));MCK(rp);
+  
+  printf("ang mem =  %fmb\n",nx*ny*sizeof(double)/1024.0/1024.0);
+
+  for(i=0;i<nx;i++){ glon[i] = slon + i*dlon;  }
+  for(i=0;i<ny;i++){ glat[i] = slat + i*dlat;  }
+
+  /*-----------------------------------------------------------------------------*/
+  angle_radius(ny,nx,lat1,lon1,glat,glon,ang,radius);//angles and radii of every grid point cf to storm location
+
+  for(i=0;i<nx*ny;i++){
+    if(ang[i] > 180.0){ printf("angle > 180 %f\n",ang[i]); }
+    if(ang[i] < -180.0){ printf("angle < 180  %f\n",ang[i]); }
+    if(radius[i] > 100000.0){ printf("radius > 100000m %f\n",radius[i]); }
+    if(radius[i] < 0.0){ printf("radius < 0m %f\n",radius[i]); }
+  }  
+  /*-----------------------------------------------------------------------------*/
+  
+  holland_p(nx,ny,Vm,Rm,pc,pn,rho,radius,p);
+  holland_v(nx,ny,Vm,Rm,pc,pn,rho,radius,v);
+  
+  mrvs_v_grid(nx,ny, 0.0, 6000.0, ar,         radius,rv);
+  mrvs_p_grid(nx,ny, 0.0, 6000.0, ar, pc, f0, radius,rp);
+
+  cor=coriolis(lat1);
+  uv(nx,ny, rv, cor,ang, vx,vy);
+
+  stress(nx,ny,rp,vx,vy, tau_x,tau_y);
+
+  //rankine_v(nx,ny,Vm,Rm,alpha,radius,rv);
+
+  fp=fopen("out","w+");
+  for(j=0;j<ny;j++){
+    for(i=0;i<nx;i++){
+      fprintf(fp,"%f %f %f %f %f %f %f %f %f %f\n",glon[i], glat[j], 
+              v[i+j*nx], p[i+j*nx], tau_x[i+j*nx], tau_y[i+j*nx], ang[i+j*nx], radius[i+j*nx], rv[i+j*nx], rp[i+j*nx]);
+    }
+    fprintf(fp,"\n");
+  }
+  fclose(fp);
+
+  free(radius);
+  free(p);
+  free(v);
+  free(rp);
+  free(rv);
+  double dx=0.12;
+  ny=6320;
+  radius=malloc(ny*sizeof(double));
+  p=malloc(ny*sizeof(double));
+  v=malloc(ny*sizeof(double));
+  rv=malloc(ny*sizeof(double));
+  rp=malloc(ny*sizeof(double));
+  for(i=0;i<ny;i++){
+    radius[i]=i*dx;
+  }
+
+  holland_p(1,ny,Vm,Rm,pc,pn,rho,radius,p);
+  holland_v(1,ny,Vm,Rm,pc,pn,rho,radius,v);
+  
+  mrvs_v_grid(1,ny, 0.0, ny*dx, ar,         radius,rv);
+  mrvs_p_grid(1,ny, 0.0, ny*dx, ar, pc, f0, radius,rp);
+
+  fp=fopen("out2","w+");
+  for(i=0;i<ny;i++){
+    fprintf(fp,"%f %f %f %f %f\n",radius[i], v[i], p[i], rv[i], rp[i]);
+  }
+  
+  fclose(fp);
+
+  printf("\n\nTo plot with gnuplot:\n");
+  printf("gnuplot\n");
+  printf("set pm3d map\n");
+  printf("splot \"out\" u 1:2:N\n");
+  printf("\n");
+  printf("where N is..\n");
+  printf("3: Holland radial velocity\n");
+  printf("4: pressure\n");
+  printf("5: tau_x\n");
+  printf("6: tau_y\n");
+  printf("7: angle\n");
+  printf("8: radial distance from storm\n");
+  printf("9: Rankine radial velocity\n");
+  /*-----------------------------------------------------------------------------*/
+  free(p);
+  free(v);
+  free(vx);
+  free(vy);
+  free(tau_x);
+  free(tau_y);
+  free(rv);
+  free(rp);
+  free(glon);
+  free(glat);
+  free(ang);
+  free(radius);
   return 0;
 }

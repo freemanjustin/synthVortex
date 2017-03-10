@@ -1,3 +1,5 @@
+#ifndef vortex_h
+#define vortex_h
 #include <stdlib.h>// rand
 #include <stdio.h>
 #include <string.h>
@@ -22,4 +24,5 @@ void holland_v(int nx, int ny, double Vm, double Rm, double pc, double pn, doubl
 void holland_p(int nx, int ny, double Vm, double Rm, double pc, double pn, double rho, double *radius, double *p);
 int test_vortex();
 
+#endif
 
