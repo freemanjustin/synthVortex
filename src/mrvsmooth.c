@@ -47,16 +47,21 @@ double lininterp(int m, double *xm, double *Fm, double x){
   double dx,df;
 
   if(x<xm[0] || x > xm[m-1]){
-    printf("input x out of bounds of input array x=%f (%f - %f)\n",x,xm[0],xm[m-1]);
-    exit(EXIT_FAILURE);
+    printf("input x out of bounds of input array x=%f (%f - %f) in %s\n",x,xm[0],xm[m-1],__func__);
+    return 0.0;
   }
   while(x > xm[i] && i < m){
     i++;
   }
-  dx = (x-xm[i-1]);
-  df = (Fm[i]-Fm[i-1])/(xm[i]-xm[i-1]);
+  if(i>m-1){ printf("index out of bounds in %s\n",__func__); exit(EXIT_FAILURE);}
+  if(i==0){
+    return Fm[0];
+  }else{
+    dx = (x-xm[i-1]);
+    df = (Fm[i]-Fm[i-1])/(xm[i]-xm[i-1]);
       
-  return Fm[i-1] + df*dx;
+    return Fm[i-1] + df*dx;
+  }
 }
 /***********************************************
  *
@@ -228,6 +233,7 @@ void mrvs_v_grid(int nx, int ny, double minr, double maxr, double *a, double *gr
   }
   free(v2);
   free(rr);
+  free(zeta);
 }
 /*****************************************
 * minr (km) 
@@ -281,6 +287,7 @@ void mrvs_p_grid(int nx, int ny, double minr, double maxr, double *a, double pc,
   free(v2);
   free(p2);
   free(rr);
+  free(zeta);
 }
 
 double* mrvs_v(int n, double *r, double *a, int blendorder){

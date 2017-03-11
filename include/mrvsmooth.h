@@ -1,6 +1,5 @@
 #ifndef mrvsmooth_h
 #define mrvsmooth_h
-#define mrvsmooth_h
 
 #include <stdlib.h>// rand
 #include <stdio.h>
